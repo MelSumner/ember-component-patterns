@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Ember Component Patterns](README.md)
+* [Modals](modals.md)
 
