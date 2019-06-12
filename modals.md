@@ -96,6 +96,7 @@ Check [https://emberobserver.com/](https://emberobserver.com/) for a list of all
 
 * [http://w3c.github.io/aria-practices/\#dialog\_modal](http://w3c.github.io/aria-practices/#dialog_modal)
 * [http://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html](http://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html)
+* [https://github.com/MelSumner/ember-a11y-roadmap/blob/master/rfc-research/dialogs/modals.md](https://github.com/MelSumner/ember-a11y-roadmap/blob/master/rfc-research/dialogs/modals.md)
 * [https://scottaohara.github.io/accessible\_modal\_window/](https://scottaohara.github.io/accessible_modal_window/)
 * [https://www.scottohara.me/blog/2016/09/07/revised-modal-window.html](https://www.scottohara.me/blog/2016/09/07/revised-modal-window.html)
 * [https://github.com/gdkraus/accessible-modal-dialog](https://github.com/gdkraus/accessible-modal-dialog)
