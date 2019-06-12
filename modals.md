@@ -9,10 +9,12 @@ All modals must support the following:
 * A modal must only appear after the user has taken a specific action to trigger it. 
 * A modal must not appear automatically. For example: 
   * Unacceptable: the user visits a page and a modal immediately pops up, or appears after a set interval. 
-  * Acceptable: the user submits a form, and a modal pops up to invite them to review their submission before proceeding. 
-* A machine-readable title. This means that a title should be present for assistive technology \(AT\) such as screen-readers to use, whether visible or not \(tip: it benefits _all_ users to have a visible title\). 
-* Keyboard navigation support  
-* Focus management: All modals must keep focus in the modal window until the user interacts with the modal to dismiss it.
+  * Acceptable: the user submits a form, and a modal appears to invite them to review their submission before proceeding. 
+* A machine-readable title. This means that a title should be present for assistive technology \(AT\) such as screen-readers to use, whether visible or not \(tip: it benefits _all_ users to have a visible title\).   
+* When the modal appears, the focus should be placed around the modal. This will ensure that assistive technology will read out the content of the modal. 
+* All modals must keep focus in the modal window until the user interacts with the modal to dismiss it.
+* The container element must include `tabindex="-1"` in order to be eligible to receive focus \(_weird browser quirk_\).
+* Modal windows must have keyboard navigation support. 
 
 ### Keyboard Support
 
