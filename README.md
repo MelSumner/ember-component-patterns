@@ -1,10 +1,15 @@
 # Ember Component Patterns
 
-This guide intends to provide guidance for any Ember developer who wants to create a component, but is perhaps not as well-versed in semantic HTML or accessibility as they are in JavaScript. 
+The goal of this guide is to empower everyone involved in a technical project. 
 
-Contributions are welcome.
+### Developers
+
+* write more technically accurate code 
+* worry a little bit less about writing code that is not accessible.  
+
+Contributions that use semantic HTML and pass WCAG success criteria are welcome.
 
 ### Component Patterns
 
-[Modals](modals.md)
+[Modal](complex-components/modals.md)
 

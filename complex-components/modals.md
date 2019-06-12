@@ -1,4 +1,4 @@
-# Modals
+# Modal
 
 The \#1 issue for any modal is lack of focus trapping. No matter what approach authors decide to take, authors must ensure that focus is contained to the modal when the modal is open. This means that when the user navigates with a keyboard \(TAB key, for example\) or a mouse, they are not able to navigate to any content outside of the modal window.
 
