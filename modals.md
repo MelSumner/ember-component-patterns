@@ -62,7 +62,7 @@ All modals must support the following:
 There are some common approaches used to provide focus-trapping in modals:
 
 1. keep track of the first interactive element and the last interactive element. Only allow focus to move to the appropriate one \(`TAB` vs `SHIFT + TAB`\)
-2. use the inert browser polyfill.
+2. use the [inert browser polyfill](https://github.com/wicg/inert).
 
 ### Sample Markup
 
@@ -94,5 +94,9 @@ Check [https://emberobserver.com/](https://emberobserver.com/) for a list of all
 
 ### References
 
+* [http://w3c.github.io/aria-practices/\#dialog\_modal](http://w3c.github.io/aria-practices/#dialog_modal)
 * [http://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html](http://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html)
+* [https://scottaohara.github.io/accessible\_modal\_window/](https://scottaohara.github.io/accessible_modal_window/)
+* [https://www.scottohara.me/blog/2016/09/07/revised-modal-window.html](https://www.scottohara.me/blog/2016/09/07/revised-modal-window.html)
+* [https://github.com/gdkraus/accessible-modal-dialog](https://github.com/gdkraus/accessible-modal-dialog)
 
