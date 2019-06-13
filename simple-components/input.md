@@ -6,13 +6,12 @@ description: How to create accessible form input elements in Ember.
 
 ### Requirements
 
-* Input fields must have associated `<label>` elements. To do this, add the `for` attribute to the`<label>` element. The value of the `for` attribute must be the same as the value for the `<input>` element's `id` attribute value. 
-* Input fields should ensure that  they have properly associated error message. To do this, add the `aria-describedby` attribute to the `<input>` element. 
-* When the input field fails to validate, an associated error message should be shown. 
+* An input field must have associated `<label>` element. To do this, add the `for` attribute to the`<label>` element. The value of the `for` attribute must be the same as the value for the `<input>` element's `id` attribute value. 
+* When the input field fails to validate, an associated error message should be shown. To do this, add the `aria-describedby` attribute to the `<input>` element. The value of the `aria-describedby` attribute must be the same as the value for the `id` of the element that shows the error message \(typically a `<span>` element\). 
 
 ### Sample Markup
 
-First and foremost: These samples have been simplified to focus on accessibility. Simply copying and pasting these code samples will not produce a complete result. 
+_**First and foremost:**_ These samples have been simplified to focus on accessibility. Simply copying and pasting these code samples will not produce a complete result. 
 
 #### Input with a label
 
@@ -38,4 +37,4 @@ aria-invalid="true">
 
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
-* 
+
