@@ -22,3 +22,11 @@ As this project matures, more prose will be added that will explain why other op
 * reference to help you more accurately know component base requirements
 * helps you to plan out projects more accurately
 
+
+
+### How To Contribute
+
+Contributions are welcome! Contact Melanie Sumner for more information. 
+
+
+
