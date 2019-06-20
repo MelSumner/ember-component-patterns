@@ -90,7 +90,7 @@ Check [https://emberobserver.com/](https://emberobserver.com/) for a list of all
 
 **ember-modal-dialog** - [https://github.com/yapplabs/ember-modal-dialog](https://github.com/yapplabs/ember-modal-dialog) is one of the most popular modal dialogs for Ember apps. However, users should be aware of [a11y issues](https://github.com/yapplabs/ember-modal-dialog/issues/236) before using this addon. 
 
-**e-a11y-modal** - This addon is intended to provide a simple, accessible, button-triggered modal. For the user with a screen reader, either the modal will exist, or the rest of the page will exist, but never both at the same time.
+**e-a11y-modal** - [https://github.com/melsumner/e-a11y-modal](https://github.com/melsumner/e-a11y-modal) This addon is intended to provide a simple, accessible, button-triggered modal. For the user with a screen reader, either the modal will exist, or the rest of the page will exist, but never both at the same time.
 
 
 
