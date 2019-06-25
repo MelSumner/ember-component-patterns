@@ -13,7 +13,7 @@ All modals must support the following:
 * A machine-readable title. This means that a title should be present for assistive technology \(AT\) such as screen-readers to use, whether visible or not \(tip: it benefits _all_ users to have a visible title\).   
 * When the modal appears, the focus should be placed around the modal. This will ensure that assistive technology will read out the content of the modal. 
 * All modals must keep focus in the modal window until the user interacts with the modal to dismiss it.
-* The container element must include `tabindex="-1"` in order to be eligible to receive focus \(_weird browser quirk_\).
+* The container element must include `tabindex="-1"` in order to indicate that the element is eligible to receive focus. **&lt;--this is important**
 * Modal windows must have keyboard navigation support. 
 
 ### Keyboard Support
