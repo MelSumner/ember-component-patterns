@@ -61,10 +61,10 @@ All modals must support the following:
   </tbody>
 </table>### Focus-Trapping Approaches
 
-There are some common approaches used to provide focus-trapping in modals:
+There are some common approaches used to provide focus-trapping in modals. When building a modal, choose one of these \(both have tradeoffs\):
 
 1. keep track of the first interactive element and the last interactive element. Only allow focus to move to the appropriate one \(`TAB` vs `SHIFT + TAB`\)
-2. use the [inert browser polyfill](https://github.com/wicg/inert).
+2. use the [inert browser polyfill](https://github.com/wicg/inert) \(make sure you [review the issues](https://github.com/WICG/inert/issues) and understand what you're getting yourself into if you choose this path\)
 
 ### Sample Markup
 
