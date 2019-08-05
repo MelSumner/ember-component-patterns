@@ -1,7 +1,39 @@
 # Table of contents
 
 * [Ember Component Patterns](README.md)
-* [Input](input.md)
-* [Modal](modals.md)
-* [\[WIP\] Radio Buttons](radio-buttons.md)
+
+## Global Components
+
+* [Buttons](global-components/buttons.md)
+* [Text Elements](global-components/text-elements.md)
+* [Images](global-components/images.md)
+
+## Form Components
+
+* [Input Elements](form-components/input/README.md)
+  * [Antipatterns: Input Fields](form-components/input/antipatterns-input-fields.md)
+  * [Styling: Input Fields](form-components/input/styling-input-fields.md)
+* [\[WIP\] Radio Buttons](form-components/radio-buttons/README.md)
+  * [Antipatterns: Radio Buttons](form-components/radio-buttons/antipatterns-radio-buttons.md)
+  * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
+* [Select Element](form-components/select-element.md)
+* [Typeahead](form-components/typeahead.md)
+* [Checkboxes](form-components/checkboxes.md)
+
+## Navigation
+
+* [Navbar](navigation/navbar.md)
+* [Breadcrumbs](navigation/breadcrumbs.md)
+* [Pagination](navigation/pagination.md)
+
+## Messaging
+
+* [Modal](messaging/modals.md)
+* [Alerts](messaging/alerts.md)
+
+## Composite Components
+
+* [Data Grid](composite-components/data-grid.md)
+* [Tabs](composite-components/tabs.md)
+* [Accordion](composite-components/accordion.md)
 

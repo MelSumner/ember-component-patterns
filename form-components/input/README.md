@@ -1,8 +1,8 @@
 ---
-description: How to create accessible form input elements in Ember.
+description: input field - search field - text area
 ---
 
-# Input
+# Input Elements
 
 ### Requirements
 
