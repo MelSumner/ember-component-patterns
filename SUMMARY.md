@@ -3,4 +3,5 @@
 * [Ember Component Patterns](README.md)
 * [Input](input.md)
 * [Modal](modals.md)
+* [Radio Buttons](radio-buttons.md)
 
