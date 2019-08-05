@@ -33,11 +33,11 @@ Just to make this one radio button in Material Design, the following would be ne
 | 9 attributes | 141 properties | 30k minified |
 | DOM depth of 3 | 10k minified |  |
 
-And this is just one radio button- any app will likely need more than just one. So let us consider how the appropriate markup can be achieved in a much more efficient way. 
+And this is just one radio button- any app will likely need more than just one. So now, considerations should be made for how the appropriate markup can be achieved in a much more efficient way. 
 
-### Step One: Semantic HTML
+### Step One: Markup
 
-Let us now consider using this markup, which can give us the same effect:
+Now consider this markup which uses semantic HTML to obtain the same effect:
 
 ```markup
 <div class="radio">
@@ -49,7 +49,7 @@ Let us now consider using this markup, which can give us the same effect:
 </div>
 ```
 
-This is all we need. 
+This is all that is needed. 
 
 If extra styling on the radio button is desired, the [pseudo elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements), rather than extra markup in the DOM, should be used. 
 
@@ -57,9 +57,7 @@ Of course, there are more options that will need to be build into this pattern, 
 
 #### Considering Attributes & Properties
 
-First, consider the HTML attributes that might need to be added to this component \(in addition to the ones that were already indicated in the markup sample: 
-
-1. `disabled`, `readonly`, `required` , `autofocus`- these boolean attributes work a little differently than may be expected, if one is not familiar with HTML.  For these attributes, they must be omitted all together to indicate a `false` value, and present to indicate a `true` value.   Consider this example:
+First, consider the HTML attributes that might need to be added to this component \(in addition to the ones that were already indicated in the markup sample\). It should be observed that the boolean attributes in HTML work a little differently than they do in JS. For these attributes, they must be omitted all together to indicate a `false` value. If `true`, the attribute name is only present. Consider these examples for a disabled radio button:
 
 Correct:
 
@@ -152,7 +150,7 @@ In the generated template/component file, add this markup:
 </fieldset>
 ```
 
-To use this component in your template, add the component:
+The component can then be added to the template: 
 
 ```markup
 <RadioGroup 
@@ -163,7 +161,7 @@ To use this component in your template, add the component:
 
 #### Additional Considerations
 
-If it is desirable to allow some attributes to be changed when the component is placed into the template, the specific placement of `...attributes` will allow the author to indicate which attributes can be changed and which cannot. To learn more about this, 
+If it is desirable to allow some attributes to be changed when the component is placed into the template, the specific placement of `...attributes` will allow the author to indicate which attributes can be changed and which cannot. To learn more about this, visit [https://octane-guides-preview.emberjs.com/release/upgrading/editions/\#toc\_attributes](https://octane-guides-preview.emberjs.com/release/upgrading/editions/#toc_attributes). 
 
 ### References
 
@@ -172,4 +170,5 @@ If it is desirable to allow some attributes to be changed when the component is 
 3. Talk: [The Intersection of Performance and Accessibility](https://noti.st/ericwbailey/Yfyaxa)
 4. [HTML Standard: Boolean Attributes](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes)
 5. [Pseudo Elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
-6. 
+6. TODO some style references
+
