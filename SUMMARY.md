@@ -13,7 +13,7 @@
 * [Input Elements](form-components/input/README.md)
   * [Antipatterns: Input Fields](form-components/input/antipatterns-input-fields.md)
   * [Styling: Input Fields](form-components/input/styling-input-fields.md)
-* [\[WIP\] Radio Buttons](form-components/radio-buttons/README.md)
+* [&gt;&gt;&gt; Radio Buttons](form-components/radio-buttons/README.md)
   * [Antipatterns: Radio Buttons](form-components/radio-buttons/antipatterns-radio-buttons.md)
   * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
 * [Select Element](form-components/select-element.md)
