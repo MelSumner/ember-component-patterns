@@ -111,9 +111,9 @@ The power of CSS makes it possible to use completely semantic markup and maintai
 
 \(TODO: insert some examples of how this markup could be styled differently to achieve different visual designs\)
 
-> Note: it is common to have an option pre-selected for users. An agreeable default selection can lower the amount of time a user spends filling out a form, which is always a bonus! To increase user happiness, try to re-visit the options once you have gathered some data. Observe which option users tend to choose the most, and make that the default option.
+> Note: it is common to have an option pre-selected for users. An agreeable default selection can lower the amount of time a user spends filling out a form, which is always a bonus! To increase user happiness, plan to re-visit details like these once some data has been gathered. Observe which option users tend to choose the most, and make that the default option, for extra delight.
 
-Now that well-crafted \(semantic, performant, and accessible\) markup exists, it can be converted into an Ember Component. 
+Now that well-crafted \(by which I mean semantic, performant, and accessible\) markup exists, it can be converted into an Ember Component. 
 
 ### Part Two: Creating the Ember Component
 
