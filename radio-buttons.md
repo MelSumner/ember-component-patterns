@@ -6,7 +6,7 @@ description: The radio button input. To be used with Ember 3.13+
 
 ### Introduction
 
-The radio button input is a simple component, but it is one that is very easy to do in a way that is detrimental to the performance of your application and to users with assistive technology. 
+The radio button input is a simple component, but it is one that is very easy to do in a way that is detrimental to the performance of your application and to users with assistive technology. This guide will first examine the ideology behind the pattern, and where possible, illuminate pitfalls that authors should avoid to successfully deliver a performant and accessible component. 
 
 Consider something like Material Design: 
 
@@ -35,7 +35,7 @@ Just to make this one radio button in Material Design, the following would be ne
 
 And this is just one radio button- any app will likely need more than just one. So now, considerations should be made for how the appropriate markup can be achieved in a much more efficient way. 
 
-### Step One: Markup
+### Part One: Considering Markup
 
 Now consider this markup which uses semantic HTML to obtain the same effect:
 
@@ -115,7 +115,7 @@ The power of CSS makes it possible to use completely semantic markup and maintai
 
 Now that well-crafted \(semantic, performant, and accessible\) markup exists, it can be converted into an Ember Component. 
 
-### Step Two: the Ember Component
+### Part Two: Creating the Ember Component
 
 Generate the component:
 
