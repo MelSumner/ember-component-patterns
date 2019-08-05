@@ -142,6 +142,7 @@ In the generated template/component file, add this markup:
         {{if this.isDisabled disabled}}  
         {{if this.isReadOnly readonly}}
         {{if this.isRequired required}}
+        {{if this.isSelected checked}}
       />
       <label for="contact-{{@contactPrefs.value}}">
         {{@contactPrefs.value}}
