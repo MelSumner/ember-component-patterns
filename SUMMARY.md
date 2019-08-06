@@ -10,9 +10,7 @@
 
 ## Form Components
 
-* [Input Elements](form-components/input/README.md)
-  * [Antipatterns: Input Fields](form-components/input/antipatterns-input-fields.md)
-  * [Styling: Input Fields](form-components/input/styling-input-fields.md)
+* [Input Elements](form-components/input.md)
 * [&gt;&gt;&gt; Radio Buttons](form-components/radio-buttons/README.md)
   * [Antipatterns: Radio Buttons](form-components/radio-buttons/antipatterns-radio-buttons.md)
   * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
