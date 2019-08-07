@@ -1,5 +1,8 @@
 ---
-description: Coming Soon!
+description: >-
+  Using the semantic markup as described in primary pattern page, here is how
+  more customized styles can be achieved without adding additional undesired
+  elements to the HTML.
 ---
 
 # Styling: Radio Buttons
@@ -21,6 +24,8 @@ input[type="radio"]:checked + label {
 ```
 
 Sometimes a custom style is desired. To achieve this while ensuring that the radio button markup remains appropriately available to screen readers, the radio button should be visually hidden while set up to be positioned over the styled radio button replacement. 
+
+The `label` element's `:before` and `:after` pseudo elements can be used to produce the custom styling that may be desired. In this instance, the `:before` pseudo element will act as the outer border of the radio button; the `:after` pseudo element as the visual indicator for the `checked` state.
 
 ```css
 .radio-button {
