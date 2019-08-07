@@ -30,3 +30,9 @@ This should be considered unacceptable for the following reasons:
 1. there is no `<label>` element associated with the `<input>` element
 2. the radio buttons are not associated as a group with the use of the `name` attribute.
 
+
+
+{% hint style="info" %}
+Have an anti-pattern to submit? Open an issue \(and include the sample code\) on this project's [GitHub repository](https://github.com/MelSumner/ember-component-patterns).
+{% endhint %}
+
