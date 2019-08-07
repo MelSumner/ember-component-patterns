@@ -2,7 +2,7 @@
 description: The radio button input. To be used with Ember 3.13+
 ---
 
-# &gt;&gt;&gt; Radio Buttons
+# &gt; Radio Buttons
 
 ### Introduction
 
@@ -35,12 +35,14 @@ Just to make this **one** radio button in Material Design, the following would b
 
 Since any app will likely need more than just one radio button, and the above is far too obtuse for use in modern applications, considerations should be made for how the appropriate markup can be achieved in a much more efficient way. 
 
+For additional patterns to avoid, see the [anti-patterns page](antipatterns-radio-buttons.md). 
+
 ### Part One: Considering Markup
 
 Now consider this markup which uses semantic HTML to obtain the same effect:
 
 ```markup
-<div class="radio">
+<div class="radio-button">
   <input
     type="radio"
     id="city-chicago"
@@ -51,7 +53,7 @@ Now consider this markup which uses semantic HTML to obtain the same effect:
 
 This is all that is needed. 
 
-If extra styling on the radio button is desired, the [pseudo elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements), rather than extra markup in the DOM, should be used. 
+If extra styling on the radio button is desired, the [pseudo elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements), rather than extra markup in the DOM, should be used. To see examples of how this could be done, visit the [Styling: Radio Buttons page](styling-radio-buttons.md). 
 
 Of course, there are more options that will need to be build into this pattern, so consideration for those should be planned for next, as it is preferred to plan out the component before building it.
 
@@ -80,7 +82,7 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
 ```markup
 <fieldset>
   <legend>Preferred Contact Method</legend>
-  <div class="radio">
+  <div class="radio-button">
     <input
       type="radio"
       id="contact-email"
@@ -88,7 +90,7 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
       value="email">
     <label for="contact-email">Email</label>
   </div>
-  <div class="radio">
+  <div class="radio-button">
     <input
       type="radio"
       id="contact-text"
@@ -96,7 +98,7 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
       value="text-message">
     <label for="contact-email">Text Message</label>
   </div>
-  <div class="radio">
+  <div class="radio-button">
     <input
       type="radio"
       id="contact-twitter"
