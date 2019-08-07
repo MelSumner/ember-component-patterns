@@ -2,9 +2,9 @@
 
 * [Ember Component Patterns](README.md)
 
-## General UX Information <a id="general-user-experience-information"></a>
+## General Considerations
 
-* [Use of aria-live](general-user-experience-information/use-of-aria-live.md)
+* [Use of aria-live](general-considerations/use-of-aria-live.md)
 
 ## Global Components
 
