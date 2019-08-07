@@ -136,11 +136,7 @@ In the generated template/component file, add this markup:
         name={{@contactPrefs.name}}
         type="radio"
         value={{@contactPrefs.value}}
-        {{if this.hasAutofocus autofocus}}
-        {{if this.isDisabled disabled}}  
-        {{if this.isReadOnly readonly}}
-        {{if this.isRequired required}}
-        {{if this.isSelected checked}}
+        <!--TODO booleans-->
       />
       <label for="contact-{{@contactPrefs.value}}">
         {{@contactPrefs.value}}

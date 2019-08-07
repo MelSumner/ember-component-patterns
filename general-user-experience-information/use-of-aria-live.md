@@ -1,6 +1,6 @@
 # Use of aria-live
 
-The `aria-live` attribute should be used with _**extreme**_ caution, as it can provide an extremely poor user experience for users with assistive technology. 
+The `aria-live` attribute should be used with _**extreme**_ caution, as it can provide an incredibly poor user experience for users with assistive technology. 
 
 Because the `aria-live` attribute can be used on any HTML element, and effects _all_ child elements of the element marked with the attribute, a thorough understanding of how this role works and when to use it is especially necessary for competent software engineers who build web-based solutions. 
 
