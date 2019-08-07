@@ -8,7 +8,7 @@ description: The radio button input. To be used with Ember 3.13+
 
 Although the radio button input is a simple component, it is one that is very easily constructed in a way that is detrimental to not only an application's performance but also the experience for users with assistive technology. This guide will examine successful patterns for development, and where possible, illuminate pitfalls that authors should avoid in order to successfully deliver a performant and accessible component. 
 
-Consider something like Material Design: 
+It should not be assumed that a component pattern that appears polished is technically sound. For example, consider the radio button offered by Material Design: 
 
 ```markup
 <div class="mdc-radio">
