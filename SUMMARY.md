@@ -2,10 +2,6 @@
 
 * [Ember Component Patterns](README.md)
 
-## General Considerations
-
-* [Use of aria-live](general-considerations/use-of-aria-live.md)
-
 ## Global Components
 
 * [Buttons](global-components/buttons/README.md)
@@ -39,4 +35,8 @@
 * [Data Grid](composite-components/data-grid.md)
 * [Tabs](composite-components/tabs.md)
 * [Accordion](composite-components/accordion.md)
+
+## General Considerations
+
+* [Use of aria-live](general-considerations/use-of-aria-live.md)
 
