@@ -4,11 +4,13 @@
 
 ## General Considerations
 
+* [Machine Readable Code](general-considerations/machine-readable-code.md)
 * [Use of aria-live](general-considerations/use-of-aria-live.md)
 
 ## Global Components
 
-* [Buttons](global-components/buttons.md)
+* [Buttons](global-components/buttons/README.md)
+  * [Antipatterns: Buttons](global-components/buttons/antipatterns-buttons.md)
 * [Text Elements](global-components/text-elements.md)
 * [Images](global-components/images.md)
 
