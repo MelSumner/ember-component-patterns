@@ -4,7 +4,6 @@
 
 ## General Considerations
 
-* [Machine Readable Code](general-considerations/machine-readable-code.md)
 * [Use of aria-live](general-considerations/use-of-aria-live.md)
 
 ## Global Components

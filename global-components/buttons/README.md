@@ -20,7 +20,7 @@ This is the most common markup associated with the `<button>` element:
 
 #### Icon buttons
 
-Special care should be given when deciding to include a button with only an icon in it. In order to be [machine-readable](../../general-considerations/machine-readable-code.md), information should be added depending on your icon approach. 
+Special care should be given when deciding to include a button with only an icon in it. In order to be machine-readable, information should be added depending on your icon approach. 
 
 Whether the icon is an image file, an emoji, or an SVG file, the `aria-label` attribute should be added to the `<button>` element. It should also be explicitly ensured that the image is not available to other machines, which can be achieved by adding the `aria-hidden` attribute to the . 
 
