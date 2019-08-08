@@ -44,7 +44,9 @@ For an improved user experience, consider adding text along with the icon. _**Al
 
 Toggle buttons can be a little tricky because they have multiple small details that must be included in order to be appropriately effective. 
 
-TODO toggle button details
+While a toggle button can visually present in many different ways, the use of pseudo elements can still allow semantic markup to achieve the desired outcomes. 
+
+//TODO markup
 
 #### Buttons in forms
 
