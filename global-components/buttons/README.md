@@ -15,7 +15,7 @@ Of course, there are benefits of using the `<button>` element - semantic HTML co
 This is the most common markup associated with the `<button>` element: 
 
 ```markup
-<button>text</button>
+<button id="some-id">text</button>
 ```
 
 #### Icon buttons
@@ -36,7 +36,9 @@ This markup will return the following accessibility tree:
 
 ![Chrome DevTools Accessibility Tree](../../.gitbook/assets/image%20%281%29.png)
 
-
+{% hint style="info" %}
+For an improved user experience, consider adding text along with the icon. _**All**_ users will benefit from the added clarity, especially since the meaning of icons can differ from country to country! 
+{% endhint %}
 
 #### Toggle buttons
 
