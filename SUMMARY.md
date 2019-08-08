@@ -12,7 +12,7 @@
 ## Form Components
 
 * [Input Elements](form-components/input.md)
-* [&gt; Radio Buttons](form-components/radio-buttons/README.md)
+* [Radio Buttons](form-components/radio-buttons/README.md)
   * [Antipatterns: Radio Buttons](form-components/radio-buttons/antipatterns-radio-buttons.md)
   * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
 * [Select Element](form-components/select-element.md)

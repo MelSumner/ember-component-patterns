@@ -2,7 +2,7 @@
 description: The radio button input. To be used with Ember 3.13+
 ---
 
-# &gt; Radio Buttons
+# Radio Buttons
 
 ### Introduction
 
