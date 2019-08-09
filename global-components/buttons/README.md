@@ -4,9 +4,11 @@ Ahh, the simple button. Possibly the simplest component of them all, yet still s
 
 ### Introduction
 
-The rule of thumb is this: if it takes the user from one URL to another, use a link. If otherwise, use a button element. 
+There are many benefits of using the `<button>` element - semantic HTML code is machine readable, and there are pre-existing browser defaults for interaction, such as using the `ENTER` or `SPACE` key to activate the button's `click` and `keydown` events.  
 
-Of course, there are benefits of using the `<button>` element - semantic HTML code is machine readable, and there are pre-existing browser defaults for interaction, such as using the `ENTER` or `SPACE` key to activate the button's `click` and `keydown` events.  
+{% hint style="info" %}
+Link or Button? The rule of thumb is this: if it takes the user to a URL, use a link. If not, use a button! 
+{% endhint %}
 
 ### Part One: Considering Markup
 
