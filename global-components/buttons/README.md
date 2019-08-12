@@ -4,13 +4,13 @@ Ahh, the simple button. Possibly the simplest component of them all, yet still s
 
 ### Introduction
 
-There are many benefits of using the `<button>` element - semantic HTML code is machine readable, and there are pre-existing browser defaults for interaction, such as using the `ENTER` or `SPACE` key to activate the button's `click` and `keydown` events.  
-
-{% hint style="info" %}
-Link or Button? The rule of thumb is this: if it takes the user to a URL, use a link. If not, use a button! 
-{% endhint %}
+There are useful benefits of using the `<button>` element - semantic HTML code is machine readable code, and there are pre-existing browser defaults for interaction, such as using the `ENTER` or `SPACE` key to activate the button's `click` and `keydown` events.  
 
 ### Part One: Considering Markup
+
+{% hint style="info" %}
+Link or Button? The rule of thumb is this: if it takes the user to a URL, use a link. Otherwise, use a button!  
+{% endhint %}
 
 #### Standard buttons
 
@@ -96,7 +96,9 @@ TODO using the component sample
 * [Switch Component: Toggle Button](https://scottaohara.github.io/a11y_styled_form_controls/src/toggle-button-switch/)
 * [&lt;button&gt;: The Button Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
 * [When to Use The Button Element](https://css-tricks.com/use-button-element/)
-* 
+
+
+
 
 
 
