@@ -109,15 +109,13 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
 </fieldset>
 ```
 
-The power of CSS makes it possible to use completely semantic markup and maintaining a separation of concerns where design is concerned- this means we do not need to use markup for styling. 
-
-\(TODO: insert some examples of how this markup could be styled differently to achieve different visual designs\)
+The power of CSS makes it possible to use completely semantic markup and maintaining a separation of concerns where design is concerned- this means markup is not needed to implement the desired styling.
 
 {% hint style="info" %}
 Note: it is common to have an option pre-selected for users. An agreeable default selection can lower the amount of time the user spends filling out a form, which is always a bonus! To increase user happiness, a plan should be devised to revisit details \(such as default selection\) once an appropriate amount of data has been gathered. Observe which option users tend to choose the most and make that the default option, for extra delight! 
 {% endhint %}
 
-Now that well-crafted \(by which I mean semantic, performant, and accessible\) markup exists, it can be converted into an Ember Component. 
+Now that well-crafted markup exists, it can be converted into an Ember Component. 
 
 ### Part Two: Creating the Ember Component
 
@@ -127,7 +125,7 @@ Generate the component:
 $ ember generate component radio-group
 ```
 
-In the generated template/component file, add this markup:
+In the generated `radio-group.hbs` file, add this markup:
 
 ```markup
 <fieldset>
@@ -147,6 +145,8 @@ In the generated template/component file, add this markup:
 ```
 
 //TODO conditionals
+
+* isDisabled, isReadonly, isSelected
 
 //TODO models for components? not routes. What are we doing in Octane? Guides only show routes... 
 
