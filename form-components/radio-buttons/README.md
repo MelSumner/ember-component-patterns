@@ -132,30 +132,26 @@ In the generated template/component file, add this markup:
 ```markup
 <fieldset>
   <legend>{{@title}}</legend>
-  {{#each @user.contactPrefs as |contactPrefs| }}
-    <div class="radio">
+  {{#each @cityNames as |cityName| }}
+    <div class="radio-button">
       <input
-        class={{if this.isDisabled "disabled"}}
-        id="contact-{{@contactPrefs.value}}"
-        name={{@contactPrefs.name}}
         type="radio"
-        value={{@contactPrefs.value}}
-        <!--TODO booleans-->
-      />
-      <label for="contact-{{@contactPrefs.value}}">
-        {{@contactPrefs.value}}
-      </label>
+        id="city-{{cityName}}"
+        name="city">
+      <label for="city-{{cityName}}">{{cityName}}</label>
     </div>
-  {{/each}}  
+  {{/each}}
 </fieldset>
 ```
 
-The component can then be added to the template: 
+//TODO models for components? not routes. What are we doing in Octane? Guides only show routes... 
+
+The component can then be added to the template:
 
 ```markup
 <RadioGroup 
-  @radio-title="Preferred Contact Method"
-  <!-- TODO -->
+  @title="Preferred Location"
+  @cityNames={{this.model}}
 />
 ```
 
