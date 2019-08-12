@@ -35,9 +35,9 @@ What one can obtain from this collection of patterns depends on the reader; howe
 
 
 
-### How To Contribute
-
+{% hint style="info" %}
 Contributions are welcome! Contact Melanie Sumner \(@Melanie\#1618 on [Ember Discord](https://discord.gg/emberjs)\) for more information. 
+{% endhint %}
 
 
 
