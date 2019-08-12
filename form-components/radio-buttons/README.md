@@ -181,3 +181,7 @@ If it is desirable to allow some attributes to be changed when the component is 
 5. [Pseudo Elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
 6. [Styling: Radio Buttons](styling-radio-buttons.md)
 
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue or submit a PR.
+{% endhint %}
+
