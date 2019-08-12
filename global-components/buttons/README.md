@@ -62,11 +62,25 @@ Which can, with appropriate styling, produce a toggle that would appear like thi
 
 To see how the styling would work in this case, a [CodePen](https://codepen.io/melsumner/pen/wVErBw) has been created as a demonstration. 
 
+Assistive technology interprets the existence of the `aria-pressed` attribute as a signal that this is a toggle button. Typically, a screen reader should read out "\(Option Text\) toggle button" when `aria-pressed` is false. When `aria-pressed` is set to true, "\(Option Text\) toggle button pressed" will be heard instead. 
+
 #### Buttons in forms
 
-While using `<input type="submit">` is still technically a valid, it is also an outdated approach, and it is recommended to avoid use. Additionally, `<button>` elements are considerably easier to style than `<input>` elements. 
+While using `<input type="submit">` is still technically valid HTML, it is also an outdated approach, and it is recommended to avoid use. Additionally, `<button>` elements are considerably easier to style than `<input>` elements. 
 
-TODO submit/reset
+When inside of the `<form>` element, setting the button type can indicate intent. 
+
+Submit button: 
+
+```markup
+<button type="submit">Submit this form</button>
+```
+
+If providing a form reset method is desired, the markup would look like this: 
+
+```markup
+<button type="reset">Clear form</button>
+```
 
 TODO form considerations
 

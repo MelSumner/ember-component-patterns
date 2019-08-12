@@ -33,5 +33,9 @@ This sample is marked with the role of button, which provides a machine-readable
 * there is no way to keyboard navigate to this element
 * there is no way to interact with this element using a keyboard
 
+{% hint style="info" %}
+Have an anti-pattern to submit? Open an issue \(please include sample code!\) on this project's [GitHub repository](https://github.com/MelSumner/ember-component-patterns).
+{% endhint %}
+
 
 
