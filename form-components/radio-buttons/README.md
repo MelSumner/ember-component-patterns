@@ -152,10 +152,6 @@ In the generated `radio-group.hbs` file, add this markup:
 </fieldset>
 ```
 
-//TODO conditionals
-
-* isDisabled, isReadonly, isSelected
-
 //TODO models for components? not routes. What are we doing in Octane? Guides only show routes... 
 
 The component can then be added to the template:
