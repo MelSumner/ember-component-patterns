@@ -81,20 +81,20 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
 
 ```markup
 <fieldset>
-  <legend>Preferred Contact Method</legend>
+  <legend>Preferred Location</legend>
   <div class="radio-button">
     <input
       type="radio"
-      id="contact-email"
-      name="contact-method"
-      value="email">
-    <label for="contact-email">Email</label>
+      id="city-austin"
+      name="city-preference"
+      value="austin">
+    <label for="city-austin">Austin</label>
   </div>
   <div class="radio-button">
     <input
       type="radio"
-      id="contact-text"
-      name="contact-method"
+      id="city-boston"
+      name="city-preference"
       value="text-message">
     <label for="contact-email">Text Message</label>
   </div>
@@ -137,12 +137,14 @@ In the generated template/component file, add this markup:
       <input
         type="radio"
         id="city-{{cityName}}"
-        name="city">
+        name="city-preference">
       <label for="city-{{cityName}}">{{cityName}}</label>
     </div>
   {{/each}}
 </fieldset>
 ```
+
+//TODO conditionals
 
 //TODO models for components? not routes. What are we doing in Octane? Guides only show routes... 
 
