@@ -84,7 +84,7 @@ If providing a form reset method is desired, the markup would look like this:
 
 TODO form considerations
 
-### Part Two: The Ember Component  
+### Part Two: Creating the Ember Component  
 
 TODO component sample
 
