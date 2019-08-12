@@ -46,12 +46,20 @@ Now consider this markup which uses semantic HTML to obtain the same effect:
   <input
     type="radio"
     id="city-chicago"
-    name="city">
+    name="city"
+    value="chicago">
   <label for="city-chicago">Chicago</label>
 </div>
 ```
 
 This is all that is needed. 
+
+1. the class on the wrapping div will be the styling hook
+2. the `<input>` element requires the `type` of `radio` to render a radio button
+3. the `id` is required to be associated with the `<label>` element \(essential for machine-readable code\)
+4. the `name` is required to group radio buttons together \(allowing for browser defaults like arrow key navigation
+5. the `value` is necessary to indicate the information that should be returned to the database
+6. the `label` requires the `for` attribute that is the value of the `<input>` element's `id` attribute \(see \#3\)
 
 If extra styling on the radio button is desired, the [pseudo elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements), rather than extra markup in the DOM, should be used. To see examples of how this could be done, visit the [Styling: Radio Buttons page](styling-radio-buttons.md). 
 
