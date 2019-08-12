@@ -171,5 +171,5 @@ If it is desirable to allow some attributes to be changed when the component is 
 3. Talk: [The Intersection of Performance and Accessibility](https://noti.st/ericwbailey/Yfyaxa)
 4. [HTML Standard: Boolean Attributes](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes)
 5. [Pseudo Elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
-6. TODO some style references
+6. [Styling: Radio Buttons](styling-radio-buttons.md)
 
