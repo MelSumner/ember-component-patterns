@@ -137,7 +137,9 @@ In the generated template/component file, add this markup:
       <input
         type="radio"
         id="city-{{cityName}}"
-        name={{@name}}>
+        name={{@name}}
+        value={{cityName}}
+        >
       <label for="city-{{cityName}}">{{cityName}}</label>
     </div>
   {{/each}}
