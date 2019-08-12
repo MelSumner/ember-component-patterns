@@ -86,7 +86,7 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
     <input
       type="radio"
       id="city-austin"
-      name="city-preference"
+      name="location-preference"
       value="austin">
     <label for="city-austin">Austin</label>
   </div>
@@ -94,17 +94,17 @@ A radio button is, by nature, not going to be used alone \(in those instances, a
     <input
       type="radio"
       id="city-boston"
-      name="city-preference"
-      value="text-message">
-    <label for="contact-email">Text Message</label>
+      name="location-preference"
+      value="boston">
+    <label for="city-boston">Boston</label>
   </div>
   <div class="radio-button">
     <input
       type="radio"
-      id="contact-twitter"
-      name="contact-method"
-      value="twitter">
-    <label for="contact-email">Twitter DM</label>
+      id="city-portland"
+      name="location-preference"
+      value="portland">
+    <label for="city-portland">Portland</label>
   </div>  
 </fieldset>
 ```
@@ -137,7 +137,7 @@ In the generated template/component file, add this markup:
       <input
         type="radio"
         id="city-{{cityName}}"
-        name="city-preference">
+        name={{@name}}>
       <label for="city-{{cityName}}">{{cityName}}</label>
     </div>
   {{/each}}
@@ -154,6 +154,7 @@ The component can then be added to the template:
 <RadioGroup 
   @title="Preferred Location"
   @cityNames={{this.model}}
+  @name="location-preference"
 />
 ```
 
