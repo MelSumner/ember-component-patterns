@@ -138,7 +138,7 @@ In the generated `radio-group.hbs` file, add this markup:
 ```markup
 <fieldset>
   <legend>{{@title}}</legend>
-  {{#each @cityNames as |cityName| }}
+  {{#each this.cityNames as |cityName| }}
     <div class="radio-button">
       <input
         type="radio"
@@ -152,14 +152,26 @@ In the generated `radio-group.hbs` file, add this markup:
 </fieldset>
 ```
 
-//TODO models for components? not routes. What are we doing in Octane? Guides only show routes... 
+For the purpose of this example, the assumption is made that `cityNames` is defined in the `radio-group.js` file:
 
-The component can then be added to the template:
+```javascript
+import Component from '@glimmer/component';
+
+export default class RadioButtonsComponent extends Component { 
+  cityNames = [ 
+    { city: 'austin' }, 
+    { city: 'boston'}, 
+    { city: 'portland'}
+  ]; 
+}
+```
+
+The component can then be added to the page template: 
 
 ```markup
 <RadioGroup 
   @title="Preferred Location"
-  @cityNames={{this.model}}
+  @cityNames={{this.cityNames}}
   @name="location-preference"
 />
 ```
