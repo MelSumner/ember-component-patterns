@@ -86,9 +86,74 @@ TODO form considerations
 
 ### Part Two: Creating the Ember Component  
 
-TODO component sample
+#### The Generic Button Component
 
-TODO using the component sample
+Generate the generic button component: 
+
+```bash
+ember generate component button-generic -gc
+```
+
+The appropriate markup can then be added to the `button-generic.hbs` file. Note that because button classes will so often need extra classes for styling,  `...attributes` should be added to allow a bit more flexibility when using the component, as it is practical.
+
+```markup
+<button 
+  // TODO 
+  class="button"
+  ...attributes
+>
+{{@accessibleName}}
+</button>
+```
+
+Since a button should do something when it is interacted with, an action will be added to the `button-generic.js` file. For the purpose of this document, the action will only put a message in the console log:
+
+```javascript
+import Component from '@glimmer/component';
+import action from '@ember/object';
+
+export default class ButtonGenericComponent extends Component { 
+  @action buttonAction() { 
+    console.log('computer says hello'); 
+  } 
+} 
+```
+
+The component can then be added to the page template:
+
+```markup
+<ButtonGeneric 
+ @accessibleName="Say Hello"
+/>
+```
+
+#### The Toggle Button Component
+
+Generate the toggle button component: 
+
+```bash
+ember generate component button-toggle -gc
+```
+
+The markup should then be added to the `button-toggle.hbs` file: 
+
+```text
+//TODO
+```
+
+Actions will need to then be added to the `button-toggle.js` file:
+
+```text
+//TODO
+```
+
+The component can then be used in the page template:
+
+```text
+//TODO
+```
+
+
 
 ### References
 
