@@ -146,6 +146,7 @@ In the generated `radio-group.hbs` file, add this markup:
         id="city-{{cityName}}"
         name={{@name}}
         value={{cityName}}
+        checked={{this.isSelected}}
         >
       <label for="city-{{cityName}}">{{cityName}}</label>
     </div>
