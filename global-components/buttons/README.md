@@ -66,9 +66,9 @@ Assistive technology interprets the existence of the `aria-pressed` attribute as
 
 #### Buttons in forms
 
-While using `<input type="submit">` is still technically valid HTML, it is also an outdated approach, and it is recommended to avoid use. Additionally, `<button>` elements are considerably easier to style than `<input>` elements. 
+While using `<input type="submit">` is still technically valid HTML, it is also an _outdated_ approach, and it is recommended to avoid use. Additionally, `<button>` elements are considerably easier to style than `<input>` elements. 
 
-When inside of the `<form>` element, setting the button type can indicate intent. 
+When inside of the `<form>` element, setting the button `type` attribute can indicate intent. If there is only one button in the `<form>` element, the button will be treated as though `type="submit"` were declared. However, explicit declaration of type is typically preferred when components are abstracted for use in many places. 
 
 Submit button: 
 
@@ -81,8 +81,6 @@ If providing a form reset method is desired, the markup would look like this:
 ```markup
 <button type="reset">Clear form</button>
 ```
-
-TODO form considerations
 
 ### Part Two: Creating the Ember Component  
 
