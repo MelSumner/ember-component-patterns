@@ -96,7 +96,6 @@ The appropriate markup can then be added to the `button-generic.hbs` file. Note 
 
 ```markup
 <button 
-  // TODO 
   class="button"
   ...attributes
 >
@@ -123,32 +122,6 @@ The component can then be added to the page template:
 <ButtonGeneric 
  @accessibleName="Say Hello"
 />
-```
-
-#### The Toggle Button Component
-
-Generate the toggle button component: 
-
-```bash
-ember generate component button-toggle -gc
-```
-
-The markup should then be added to the `button-toggle.hbs` file: 
-
-```text
-//TODO
-```
-
-Actions will need to then be added to the `button-toggle.js` file:
-
-```text
-//TODO
-```
-
-The component can then be used in the page template:
-
-```text
-//TODO
 ```
 
 
