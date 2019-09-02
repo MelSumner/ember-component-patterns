@@ -96,6 +96,8 @@ The appropriate markup can then be added to the `button-generic.hbs` file. Note 
 
 ```markup
 <button 
+  {{on "click" this.handleInteraction}}
+  {{on "keydown" this.handleInteraction}}
   class="button"
   ...attributes
 >
@@ -110,7 +112,7 @@ import Component from '@glimmer/component';
 import action from '@ember/object';
 
 export default class ButtonGenericComponent extends Component { 
-  @action buttonAction() { 
+  @action handleInteraction() { 
     console.log('computer says hello'); 
   } 
 } 
