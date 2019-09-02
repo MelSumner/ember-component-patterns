@@ -154,6 +154,8 @@ In the generated `radio-group.hbs` file, add this markup:
 </fieldset>
 ```
 
+It is possible that the `value` attribute's value may be different from the `<label>` element's contents, but in most cases, it's better that it match. If slight adjustments are needed \(i.e., capitalization\), a helper should be used. 
+
 For the purpose of this example, the assumption is made that `cityNames` is defined in the `radio-group.js` file:
 
 ```javascript
