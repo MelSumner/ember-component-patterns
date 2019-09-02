@@ -27,7 +27,7 @@ This is what the simplified markup for an input with an associated error message
 ```markup
 <label for="input-firstName">Email</label> 
 <input type="text" id="input-firstName" aria-describedby="email__error-message" 
-aria-invalid="true"> 
+aria-invalid="true" /> 
 <span id="email__error-message" role="alert">
   Please enter a valid email address.
 </span> 
