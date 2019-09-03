@@ -97,7 +97,6 @@ The appropriate markup can then be added to the `button-generic.hbs` file. Note 
 ```markup
 <button 
   {{on "click" this.handleInteraction}}
-  {{on "keydown" this.handleInteraction}}
   class="button"
   ...attributes
 >
