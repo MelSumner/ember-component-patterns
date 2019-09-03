@@ -6,7 +6,7 @@ description: These are patterns that should be avoided.
 
 When considering how to craft a useful radio button group component, it is also necessary to consider what _not_ to do. If any Ember addon is evaluated for use, it is not only the Ember code itself that needs to be evaluated, but the output to the browser itself that should be evaluated. 
 
-### Antipattern \#1: divs and spans
+### Anti-pattern \#1: divs and spans
 
 Consider this markup:
 
@@ -32,7 +32,7 @@ This should be considered unacceptable for the following reasons:
 1. there is no `<label>` element associated with the `<input>` element
 2. the radio buttons are not associated as a group with the use of the `name` attribute.
 
-### Antipattern \#2 - label first
+### Anti-pattern \#2 - label first
 
 Consider this markup: 
 
