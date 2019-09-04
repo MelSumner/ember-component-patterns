@@ -36,7 +36,7 @@ Example:
 
 This markup will return the following accessibility tree: 
 
-![Chrome DevTools Accessibility Tree](../../.gitbook/assets/image%20%281%29.png)
+![Chrome DevTools Accessibility Tree](../../.gitbook/assets/image%20%283%29.png)
 
 {% hint style="info" %}
 For an improved user experience, consider adding text along with the icon. _**All**_ users will benefit from the added clarity, especially since the meaning of icons can differ from country to country! 
@@ -58,7 +58,7 @@ While a toggle button can visually present in many different ways, the use of ps
 
 Which can, with appropriate styling, produce a toggle that would appear like this: 
 
-![toggle button when aria-pressed is true](../../.gitbook/assets/image%20%282%29.png)
+![toggle button when aria-pressed is true](../../.gitbook/assets/image%20%281%29.png)
 
 To see how the styling would work in this case, a [CodePen](https://codepen.io/melsumner/pen/wVErBw) has been created as a demonstration. 
 

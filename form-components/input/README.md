@@ -1,7 +1,3 @@
----
-description: input field
----
-
 # Input Element
 
 ### Introduction
@@ -23,7 +19,7 @@ The `type` attribute value is the most important attribute for the `<input>` ele
 * tel \(telephone\)
 * url
 
-Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. \(See: [Radio Buttons](radio-buttons/)\) 
+Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. \(See: [Radio Buttons](../radio-buttons/)\) 
 
 #### Text Input with a label
 
@@ -36,7 +32,11 @@ Other valid type values are `checkbox` and `radiobutton` , but covered in separa
 
 Some attributes are required to make the `<input>` element work properly. The `name` and `value` attributes both contain data that is submitted to the server when the form submits. It can also be useful in some cases to pre-fill the `value` attribute. 
 
-There are also useful attributes available for use with the `<input>` element that developers should be aware of, as this prevents unnecessary JavaScript. 
+There are also useful attributes available for use with the `<input>` element that developers should be aware of, as this prevents unnecessary JavaScript. Some of these attributes provide useful client-side form validation. 
+
+{% hint style="danger" %}
+Warning: client-side validation should _never_ be considered an appropriate substitution for server-side validation. Client-side validation can quickly and easily provide user feedback. Server-side validation is more intrusive and dependent on factors that can effect performance, and as such it is recommended to use both to obtain balance. Server-side validation should _always_ be used to protect the application against those with malicious intent. 
+{% endhint %}
 
 `required`   
 The presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute is required. Removing the attribute will indicate that it is not required. Example: 
@@ -54,13 +54,21 @@ The presence of the `disabled` attribute will prevent the user from interacting 
 <input type="text" id="firstName-input" name="firstName" disabled />
 ```
 
+![An input field that has been disabled](../../.gitbook/assets/image.png)
+
+It should be noted that browsers will apply default styles to input fields marked as `disabled`, and this can be overridden with custom CSS if desired.
+
 `readonly`   
-The presence of the `readonly` attribute will allow the user to see the current value, but will not allow the user to change the value in the input field. This is different from disabled in that the value for the readonly field will be sent to the server when the form is submitted. Again, it should be noted that only the presence of the attribute is required. Example: 
+The presence of the `readonly` attribute will allow the user to view the current value, but will not allow the user to change it. This is different from `disabled` in that the value for the input field marked with `readonly` will be sent to the server when the form is submitted. Again, it should be noted that only the presence of the attribute is required. Example: 
 
 ```markup
 <label for="firstName-input">First Name</label>
 <input type="text" id="firstName-input" name="firstName" value="Zoey" readonly />
 ```
+
+![An input field with a default value, marked as readonly](../../.gitbook/assets/image%20%285%29.png)
+
+It should be noted that browsers will apply default styles to input fields marked as `readonly`, and this can be overridden with custom CSS if desired.
 
 `autocomplete`   
 Input fields are set to `autocomplete="true"` by default. This will allow some browsers \(that provide the option\) to automatically fill in information saved by the user to the browser itself. In instances where this is not desired behavior, setting `autocomplete="false"` will turn this option off. 
@@ -72,8 +80,6 @@ It is an elevated experience for users with assistive technology to include this
 <input id="camping-preference" type="text" name="campingPreference" autocomplete="false" />
 ```
 
-
-
 `pattern`   
 Setting the pattern attribute value will provide client-side form validation for the user. The `pattern` attribute expects a Regular Expression as its value. Example:
 
@@ -84,7 +90,7 @@ Setting the pattern attribute value will provide client-side form validation for
 
 Using the `:invalid` and `:valid` pseudo selectors in CSS can indicate that the element is invalid: 
 
-![A dashed red border indicates that the value in the input field is not valid.](../.gitbook/assets/image%20%283%29.png)
+![A dashed red border indicates that the value in the input field is not valid.](../../.gitbook/assets/image%20%282%29.png)
 
 {% hint style="info" %}
 Note: the `email` and `url` input types do not require a `pattern` attribute, because they already provide their own form of pattern validation. Additionally, `pattern` is ignored if the input type is `number` AND the browser supports the type. For browsers that do not support the `number` type, the `pattern` attribute can be used to provide a graceful fallback. 
@@ -103,7 +109,7 @@ Sometimes it is useful to show the user what kind of formatting is expected. In 
 <input id="firstName-input" type="text" name="firstName" placeholder="Zoey McEmber" />
 ```
 
-![An input field with a placeholder ](../.gitbook/assets/image%20%284%29.png)
+![An input field with placeholder content](../../.gitbook/assets/image%20%286%29.png)
 
 {% hint style="danger" %}
 Warning! It is not acceptable to use a `placeholder` instead of an associated `<label>` element. Machine-readable code requires a `<label>` element to be associated with each input field. See the styling sub-section for ideas on styling. 

@@ -4,7 +4,7 @@ description: Introduction
 
 # Ember Component Patterns
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 If you are reading this paragraph, then this guide has not yet been officially released. The first version of this guide is intended to be released with Ember 3.13/3.14, as they will employ syntax and idioms that are aligned with the Octane edition of Ember.js. 
 {% endhint %}
 
