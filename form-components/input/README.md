@@ -133,6 +133,22 @@ Note the `aria-describedby` attribute on the `input` field, whose value matches 
 
 ### Part Two: Ember Component\(s\)
 
+First, the appropriate requirements should be gathered 
+
+Next, the component should be generated:
+
+```bash
+ember generate component input-text -gc
+```
+
+This will create three files: 
+
+* app/components/input-text.hbs
+* app/components/input-text.js
+* tests/integration/components/input-text-test.js
+
+
+
 ### References
 
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
