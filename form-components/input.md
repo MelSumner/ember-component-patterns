@@ -65,7 +65,7 @@ The presence of the `readonly` attribute will allow the user to see the current 
 `autocomplete`   
 Input fields are set to `autocomplete="true"` by default. This will allow some browsers \(that provide the option\) to automatically fill in information saved by the user to the browser itself. In instances where this is not desired behavior, setting `autocomplete="false"` will turn this option off. 
 
-Note: It is an elevated experience for users with assistive technology to include this attribute in form fields, especially where the type of questions being asked in a form are atypical of the type of autocomplete data \(such as name and address\) that a user's browser may have stored. Example: 
+It is an elevated experience for users with assistive technology to include this attribute in form fields, especially where the type of questions being asked in a form are atypical of the type of autocomplete data \(such as name and address\) that a user's browser may have stored. Example: 
 
 ```markup
 <label for="camping-preference">Where is your favorite place to camp?</label>
@@ -74,9 +74,8 @@ Note: It is an elevated experience for users with assistive technology to includ
 
 
 
-`pattern` setting the pattern attribute value will provide client-side form validation for the user. The `pattern` attribute expects a Regular Expression as its value. 
-
-Example:
+`pattern`   
+Setting the pattern attribute value will provide client-side form validation for the user. The `pattern` attribute expects a Regular Expression as its value. Example:
 
 ```markup
 <label for="weather-preference">Do you prefer sunny weather or cloudy weather?</label>
@@ -87,13 +86,28 @@ Using the `:invalid` and `:valid` pseudo selectors in CSS can indicate that the 
 
 ![A dashed red border indicates that the value in the input field is not valid.](../.gitbook/assets/image%20%283%29.png)
 
-It should be noted that the `email` and `url` input types do not require a `pattern` attribute because they already provide their own form of pattern validation. Additionally, `pattern` is ignored in browsers that support the `number` type. 
+{% hint style="info" %}
+Note: the `email` and `url` input types do not require a `pattern` attribute, because they already provide their own form of pattern validation. Additionally, `pattern` is ignored if the input type is `number` AND the browser supports the type. For browsers that do not support the `number` type, the `pattern` attribute can be used to provide a graceful fallback. 
+{% endhint %}
 
-`min-length` and `max-length` are used when it is useful to control the number of characters put into the field. Some traditional databases have a maximum character length that they can accept, so it is prudent to be aware of the limitations of where the form data is heading. 
+`min-length` and `max-length`   
+When it is useful to control the number of characters put into the field, `min-length` and `max-length` attributes can be used. Some traditional databases have a maximum character length that they can accept, so it is prudent to be aware of the limitations of where the form data is heading. 
 
 It is also appropriate to be aware that non-traditional data may exist, and plan for those use cases. For more reading on this subject, search for "_names that break websites_", or read [People's Names that Break Websites](https://css-tricks.com/peoples-names-break-websites/). 
 
-`placeholder` 
+`placeholder`   
+Sometimes it is useful to show the user what kind of formatting is expected. In these cases, the `placeholder` attribute can be useful. Example: 
+
+```markup
+<label for="firstName-input">First Name</label>
+<input id="firstName-input" type="text" name="firstName" placeholder="Zoey McEmber" />
+```
+
+![An input field with a placeholder ](../.gitbook/assets/image%20%284%29.png)
+
+{% hint style="danger" %}
+Warning! It is not acceptable to use a `placeholder` instead of an associated `<label>` element. Machine-readable code requires a `<label>` element to be associated with each input field. See the styling sub-section for ideas on styling. 
+{% endhint %}
 
 #### Input with associated error message
 
