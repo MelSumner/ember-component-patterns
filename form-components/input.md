@@ -18,9 +18,9 @@ _**First and foremost:**_ These samples have been simplified to focus on accessi
 The `type` attribute value is the most important attribute for the `<input>` element. While it is `text` by default, there are other valid values:
 
 * email
-* search
 * password
-* tel
+* search
+* tel \(telephone\)
 * url
 
 Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. \(See: [Radio Buttons](radio-buttons/)\) 
@@ -38,15 +38,41 @@ Some attributes are required to make the `<input>` element work properly. The `n
 
 There are also useful attributes available for use with the `<input>` element that developers should be aware of, as this prevents unnecessary JavaScript. 
 
-`required` the presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute is required. Removing the attribute will indicate that it is not required. 
+`required`   
+The presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute is required. Removing the attribute will indicate that it is not required. Example: 
 
-`disabled` the presence of the `disabled` attribute will prevent the user from interacting with this element, and the `value` of this field will not be submitted to the server with the rest of the form data. This is useful in cases where it has been determined that the specific end user does not meet the criteria to fill out this specific form field. Disabled elements are also not required to pass color contrast standards as related to WCAG success criteria. Again, it should be noted that only the presence of the attribute is required. 
+```markup
+<label for="firstName-input">First Name</label>
+<input type="text" id="firstName-input" name="firstName" required />
+```
 
-`readonly` the presence of the `readonly` attribute will allow the user to see the current value, but will not allow the user to change the value in the input field. This is different from disabled in that the value for the readonly field will be sent to the server when the form is submitted. Again, it should be noted that only the presence of the attribute is required. 
+`disabled`   
+The presence of the `disabled` attribute will prevent the user from interacting with this element, and the `value` of this field will not be submitted to the server with the rest of the form data. This is useful in cases where it has been determined that the specific end user does not meet the criteria to fill out this specific form field. Disabled elements are also not required to pass [color contrast standards](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=143#contrast-minimum) as related to WCAG success criteria. Finally, it should be noted that only the presence of the attribute is required. 
 
-`autocomplete="true"` Input fields have this set by default. This will allow some browsers \(that provide the option\) to automatically fill in information saved by the user to the browser itself. In instances where this is not desired behavior, setting `autocomplete="false"` will turn this option off. 
+```markup
+<label for="firstName-input">First Name</label>
+<input type="text" id="firstName-input" name="firstName" disabled />
+```
 
-Note: It is an elevated experience for users with assistive technology to include this attribute in form fields, especially where the type of questions being asked in a form are atypical of the type of autocomplete data \(such as name and address\) that a user's browser may have stored. 
+`readonly`   
+The presence of the `readonly` attribute will allow the user to see the current value, but will not allow the user to change the value in the input field. This is different from disabled in that the value for the readonly field will be sent to the server when the form is submitted. Again, it should be noted that only the presence of the attribute is required. Example: 
+
+```markup
+<label for="firstName-input">First Name</label>
+<input type="text" id="firstName-input" name="firstName" value="Zoey" readonly />
+```
+
+`autocomplete`   
+Input fields are set to `autocomplete="true"` by default. This will allow some browsers \(that provide the option\) to automatically fill in information saved by the user to the browser itself. In instances where this is not desired behavior, setting `autocomplete="false"` will turn this option off. 
+
+Note: It is an elevated experience for users with assistive technology to include this attribute in form fields, especially where the type of questions being asked in a form are atypical of the type of autocomplete data \(such as name and address\) that a user's browser may have stored. Example: 
+
+```markup
+<label for="camping-preference">Where is your favorite place to camp?</label>
+<input id="camping-preference" type="text" name="campingPreference" autocomplete="false" />
+```
+
+
 
 `pattern` setting the pattern attribute value will provide client-side form validation for the user. The `pattern` attribute expects a Regular Expression as its value. 
 
