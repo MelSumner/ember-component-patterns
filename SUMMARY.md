@@ -9,6 +9,7 @@
 
 ## Form Components
 
+* [Checkboxes](form-components/checkboxes.md)
 * [Input Element](form-components/input/README.md)
   * [Styling: Input Fields](form-components/input/styling-input-fields.md)
 * [Radio Buttons](form-components/radio-buttons/README.md)
@@ -16,7 +17,6 @@
   * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
 * [Select Element](form-components/select-element.md)
 * [Typeahead](form-components/typeahead.md)
-* [Checkboxes](form-components/checkboxes.md)
 
 ## Navigation
 

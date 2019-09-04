@@ -56,7 +56,7 @@ The presence of the `disabled` attribute will prevent the user from interacting 
 
 ![An input field that has been disabled](../../.gitbook/assets/image.png)
 
-It should be noted that browsers will apply default styles to input fields marked as `disabled`, and this can be overridden with custom CSS if desired.
+It should be noted that browsers will apply default styles to input fields marked as `disabled`; however this can be overridden with custom CSS if desired.
 
 `readonly`   
 The presence of the `readonly` attribute will allow the user to view the current value, but will not allow the user to change it. This is different from `disabled` in that the value for the input field marked with `readonly` will be sent to the server when the form is submitted. Again, it should be noted that only the presence of the attribute is required. Example: 
@@ -68,7 +68,7 @@ The presence of the `readonly` attribute will allow the user to view the current
 
 ![An input field with a default value, marked as readonly](../../.gitbook/assets/image%20%285%29.png)
 
-It should be noted that browsers will apply default styles to input fields marked as `readonly`, and this can be overridden with custom CSS if desired.
+It should be noted that browsers will apply default styles to input fields marked as `readonly`; however this can be overridden with custom CSS if desired.
 
 `autocomplete`   
 Input fields are set to `autocomplete="true"` by default. This will allow some browsers \(that provide the option\) to automatically fill in information saved by the user to the browser itself. In instances where this is not desired behavior, setting `autocomplete="false"` will turn this option off. 
