@@ -25,7 +25,11 @@ The `type` attribute value is the most important attribute for the `<input>` ele
 * tel \(telephone\)
 * url
 
-Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. There are other input types that are still valid but are no longer recommended for use, as they have been replaced with better support \(i.e., `input type="submit"` should now be `button type="submit"`\). See [https://codepen.io/melsumner/pen/ExYwqxZ](https://codepen.io/melsumner/pen/ExYwqxZ) for a list of valid native HTML input types. 
+Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. There are other input types that are still valid but are no longer recommended for use, as they have been replaced with better support \(i.e., `input type="submit"` should now be `button type="submit"`\). 
+
+{% hint style="info" %}
+Fun Alert! See [https://codepen.io/melsumner/pen/ExYwqxZ](https://codepen.io/melsumner/pen/ExYwqxZ) for valid native HTML input types and some native client-side form validation in action- it may contain a few surprises!
+{% endhint %}
 
 #### Text Input with a label
 
@@ -200,7 +204,7 @@ Then, the component can be used in the view or page template:
 <InputText @inputLabelText="First Name" @inputName="firstName" />
 ```
 
-In this example, the component has been closely scoped for a specific type of text input. Further customization could be desired, so it is recommended to consider the balance of use cases. By providing separate components for different input types, it can lower the developer's cognitive burden as there will be fewer options to remember within one specific component. On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. Have a team discussion to determine which is the right approach for your project. 
+In this example, the component has been closely scoped for a specific type of text input. Further customization could be desired, so it is recommended to consider the balance of use cases. By providing separate components for different input types, it can lower the developer's cognitive burden as there will be fewer options to remember within one specific component. On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. Have a team discussion to determine which is the right approach for the specific project. 
 
 ### References
 
