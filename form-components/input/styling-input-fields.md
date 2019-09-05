@@ -1,4 +1,4 @@
-# Styling: Input Fields
+# Styling: Text Fields
 
 ### Visually Hidden Labels
 

@@ -2,7 +2,7 @@
 description: This is for generating a text field input element.
 ---
 
-# Input Element
+# Text Fields
 
 ### Introduction
 
@@ -15,15 +15,17 @@ _**First and foremost:**_ These samples have been simplified to focus on accessi
 
 #### Input Types
 
-The `type` attribute value is the most important attribute for the `<input>` element. While it is `text` by default, there are other valid values:
+The `type` attribute value is the most important attribute for the `<input>` element. While it is `text` by default, here are some other common input types:
 
 * email
+* file
+* number
 * password
 * search
 * tel \(telephone\)
 * url
 
-Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. \(See: [Radio Buttons](../radio-buttons/)\) 
+Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. There are other input types that are still valid but are no longer recommended for use, as they have been replaced with better support \(i.e., `input type="submit"` should now be `button type="submit"`\). See [https://codepen.io/melsumner/pen/ExYwqxZ](https://codepen.io/melsumner/pen/ExYwqxZ) for a list of valid native HTML input types. 
 
 #### Text Input with a label
 
@@ -118,6 +120,8 @@ Sometimes it is useful to show the user what kind of formatting is expected. In 
 {% hint style="danger" %}
 Warning! It is not acceptable to use a `placeholder` instead of an associated `<label>` element. Machine-readable code requires a `<label>` element to be associated with each input field. See the styling sub-section for ideas on styling. 
 {% endhint %}
+
+There are some other attributes that exist but are not commonly used today, such as `size`  and `width` as these things are more appropriately managed with CSS.
 
 #### Input with associated error message
 

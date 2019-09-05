@@ -10,8 +10,9 @@
 ## Form Components
 
 * [Checkboxes](form-components/checkboxes.md)
-* [Input Element](form-components/input/README.md)
-  * [Styling: Input Fields](form-components/input/styling-input-fields.md)
+* [Text Fields](form-components/input/README.md)
+  * [Antipatterns: Text Fields](form-components/input/antipatterns-text-fields.md)
+  * [Styling: Text Fields](form-components/input/styling-input-fields.md)
 * [Radio Buttons](form-components/radio-buttons/README.md)
   * [Antipatterns: Radio Buttons](form-components/radio-buttons/antipatterns-radio-buttons.md)
   * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
