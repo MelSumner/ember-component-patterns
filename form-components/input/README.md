@@ -28,7 +28,7 @@ The `type` attribute value is the most important attribute for the `<input>` ele
 Other valid type values are `checkbox` and `radiobutton` , but covered in separate topics in this guide. There are other input types that are still valid but are no longer recommended for use, as they have been replaced with better support \(i.e., `input type="submit"` should now be `button type="submit"`\). 
 
 {% hint style="info" %}
-Fun Alert! See [https://codepen.io/melsumner/pen/ExYwqxZ](https://codepen.io/melsumner/pen/ExYwqxZ) for valid native HTML input types and some native client-side form validation in action- it might surprise you!
+Fun Alert! See [https://codepen.io/melsumner/pen/ExYwqxZ](https://codepen.io/melsumner/pen/ExYwqxZ) for valid native HTML input types and some native client-side form validation in action- it may contain a few surprises!
 {% endhint %}
 
 #### Text Input with a label
@@ -159,9 +159,9 @@ This will create three files and put them in the correct location:
 * app/components/input-text.js
 * tests/integration/components/input-text-test.js
 
-In app/components/input-text.hbs, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
+In **app/components/input-text.hbs**, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
 
-So This: 
+So this markup: 
 
 ```markup
 <div class="form-group">
@@ -174,7 +174,7 @@ So This:
 </div>
 ```
 
-Becomes this: 
+Becomes this component template: 
 
 ```markup
 <div class="form-group">
@@ -204,7 +204,41 @@ Then, the component can be used in the view or page template:
 <InputText @inputLabelText="First Name" @inputName="firstName" />
 ```
 
-In this example, the component has been closely scoped for a specific type of text input. Further customization could be desired, so it is recommended to consider the balance of use cases. By providing separate components for different input types, it can lower the developer's cognitive burden as there will be fewer options to remember within one specific component. On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. Have a team discussion to determine which is the right approach for your project. 
+#### Considering Attributes
+
+Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. 
+
+Updated app/components/input-text.hbs to include these attributes:
+
+```markup
+<div class="form-group">
+  <label for={{this.inputId}}>{{@inputLabelText}}</label>
+  <input 
+    id={{this.inputId}} 
+    name={{@inputName}} 
+    type="text" 
+    disabled={{@isDisabled}}
+    required={{@isRequired}}
+    readonly={{@isReadonly}}
+  />
+</div>
+```
+
+Then they can be added or removed from the view/page template when the component is used. For example, if the disabled state was desired for an input field:
+
+```markup
+<InputText @inputLabelText="First Name" @inputName="firstName" @isDisabled="true" />
+```
+
+Note that if the attribute needs a false state, it cannot merely change to `@isDisabled="false"` \(that will still rendered the `disabled` attribute\) - it must be removed completely: 
+
+```markup
+<InputText @inputLabelText="First Name" @inputName="firstName" />
+```
+
+In these Ember Component examples, the components have been closely scoped for a specific type of text input and closely related use cases. Further customization could be desired, so it is recommended to consider the balance of use cases. By providing separate components for different input types, it can lower the developer's cognitive burden as there will be fewer options to remember within one specific component. 
+
+On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. It is strongly recommended to have a team discussion in order to determine which is the right approach for the specific project. 
 
 ### References
 
