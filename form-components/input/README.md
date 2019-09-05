@@ -45,7 +45,7 @@ Some attributes are required to make the `<input>` element work properly. The `n
 There are also useful attributes available for use with the `<input>` element that developers should be aware of, as this prevents unnecessary JavaScript. Some of these attributes provide useful client-side form validation. 
 
 {% hint style="danger" %}
-Warning: client-side validation should _never_ be considered an appropriate substitution for server-side validation. Client-side validation can quickly and easily provide user feedback. Server-side validation is more intrusive and dependent on factors that can effect performance, and as such it is recommended to use both to obtain balance. Server-side validation should _always_ be used to protect the application against those with malicious intent. 
+Warning: client-side validation should _never_ be considered an appropriate substitution for server-side validation. Client-side validation can quickly and easily provide user feedback. Server-side validation is more intrusive and dependent on factors that can affect performance, and as such it is recommended to use both to obtain balance. Server-side validation should _always_ be used to protect the application against those with malicious intent. 
 {% endhint %}
 
 `required`   
