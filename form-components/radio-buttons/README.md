@@ -131,7 +131,7 @@ Now that well-crafted markup exists, it can be converted into an Ember Component
 Generate the component:
 
 ```bash
-$ ember generate component radio-group
+$ ember generate component radio-group -gc
 ```
 
 In the generated `radio-group.hbs` file, add this markup:
