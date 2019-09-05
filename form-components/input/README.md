@@ -236,6 +236,21 @@ Note that if the attribute needs a false state, it cannot merely change to `@isD
 <InputText @inputLabelText="First Name" @inputName="firstName" />
 ```
 
+#### Ember's Input Helper
+
+For smaller applications, it may be more desirable to use Ember's input helper instead of creating a component. In these cases, can be written directly to the view/page template: 
+
+```markup
+<div class="form-group">
+  <label for="email-address">Email</label>
+  <Input type="email" id="email-address" class="form-control" />
+</div>
+```
+
+The `label` element \(and the `for` attribute\) has to be manually applied, and the `id` attribute added to the Input helper component. To read more about Ember's Input helper, visit the official Ember.js guides: [https://guides.emberjs.com/release/templates/input-helpers/](https://guides.emberjs.com/release/templates/input-helpers/). 
+
+#### Conclusion
+
 In these Ember Component examples, the components have been closely scoped for a specific type of text input and closely related use cases. Further customization could be desired, so it is recommended to consider the balance of use cases. By providing separate components for different input types, it can lower the developer's cognitive burden as there will be fewer options to remember within one specific component. 
 
 On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. It is strongly recommended to have a team discussion in order to determine which is the right approach for the specific project. 
