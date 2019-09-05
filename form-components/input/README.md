@@ -1,3 +1,7 @@
+---
+description: This is for generating a text field input element.
+---
+
 # Input Element
 
 ### Introduction
@@ -141,18 +145,64 @@ Next, the component should be generated:
 ember generate component input-text -gc
 ```
 
-This will create three files: 
+This will create three files and put them in the correct location: 
 
 * app/components/input-text.hbs
 * app/components/input-text.js
 * tests/integration/components/input-text-test.js
 
+In app/components/input-text.hbs, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
 
+So This: 
+
+```markup
+<div class="form-group">
+  <label for="input-id">Label Text</label>
+  <input 
+    id="inputId" 
+    name="input-name" 
+    type="text" 
+  />
+</div>
+```
+
+Becomes this: 
+
+```markup
+<div class="form-group">
+  <label for={{this.inputId}}>{{@inputLabelText}}</label>
+  <input 
+    id={{this.inputId}} 
+    name={{@inputName}} 
+    type="text" 
+  />
+</div>
+```
+
+In **app/components/input-text.js**, the input `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
+
+```javascript
+import Component from '@glimmer/component';
+import { guidFor } from '@ember/object/internals';
+
+export default class InputTextComponent extends Component {
+  inputId = 'textInput-' + guidFor(this); 
+}
+```
+
+Then, the component can be used in the view or page template: 
+
+```markup
+<InputText @inputLabelText="First Name" @inputName="firstName" />
+```
+
+In this example, the component has been closely scoped for a specific type of text input. Further customization could be desired, so it is recommended to consider the balance of use cases. By providing separate components for different input types, it can lower the developer's cognitive burden as there will be fewer options to remember within one specific component. On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. Have a team discussion to determine which is the right approach for your project. 
 
 ### References
 
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+* [https://api.emberjs.com/ember/release/functions/@ember%2Fobject%2Finternals/guidFor](https://api.emberjs.com/ember/release/functions/@ember%2Fobject%2Finternals/guidFor)
 
 {% hint style="info" %}
 Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue or submit a PR.
