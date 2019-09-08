@@ -255,6 +255,10 @@ In these Ember Component examples, the components have been closely scoped for a
 
 On the other hand, some teams may find it more useful to have a "kitchen sink" style of input component, that accepts many different types. It is strongly recommended to have a team discussion in order to determine which is the right approach for the specific project. 
 
+### Part Three: Abstractions for Reuse
+
+coming soon!
+
 ### References
 
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)

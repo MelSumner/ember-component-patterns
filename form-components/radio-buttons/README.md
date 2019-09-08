@@ -180,6 +180,10 @@ The component can then be added to the page template:
 />
 ```
 
+### Part Three: Abstractions for reuse
+
+Coming Soon
+
 #### Additional Considerations
 
 If it is desirable to allow some attributes to be changed when the component is placed into the template, the specific placement of `...attributes` will allow the author to indicate which attributes can be changed and which cannot. To learn more about this, visit [https://octane-guides-preview.emberjs.com/release/upgrading/editions/\#toc\_attributes](https://octane-guides-preview.emberjs.com/release/upgrading/editions/#toc_attributes). 

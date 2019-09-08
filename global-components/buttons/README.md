@@ -4,7 +4,7 @@ Ahh, the simple button. Possibly the simplest component of them all, yet still s
 
 ### Introduction
 
-There are useful benefits of using the `<button>` element - semantic HTML code is machine readable code, and there are pre-existing browser defaults for interaction, such as using the `ENTER` or `SPACE` key to activate the button's `click` and `keydown` events.  
+There are benefits to using the `<button>` element - semantic HTML is machine-readable code, and there are pre-existing browser defaults for interaction, such as using the `ENTER` or `SPACE` key to activate the button's `click` and `keydown` events.  
 
 ### Part One: Considering Markup
 
@@ -24,7 +24,7 @@ This is the most common markup associated with the `<button>` element:
 
 Special care should be given when deciding to include a button with only an icon in it. In order to be machine-readable, information should be added depending on your icon approach. 
 
-Whether the icon is an image file, an emoji, or an SVG file, the `aria-label` attribute should be added to the `<button>` element. It should also be explicitly ensured that the image is not available to other machines, which can be achieved by adding the `aria-hidden` attribute to the . 
+Whether the icon is an image file, an emoji\(not advised\), or an SVG file, the `aria-label` attribute should be added to the `<button>` element. It should also be explicitly ensured that the image is not available to other machines, which can be achieved by adding the `aria-hidden` attribute. 
 
 Example:  
 
