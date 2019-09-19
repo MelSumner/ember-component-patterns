@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Checkboxes are a useful input element to use when it is desirable to allow users to select more than one option. 
+Checkboxes are a useful input element to use when it is desirable to allow users to select more than one option. Checkboxes can have three states: checked, not checked, and indeterminate. 
 
 ### Part One: Markup
 
@@ -78,13 +78,13 @@ If the user should be able to select more than one option, a checkbox group shou
   </tbody>
 </table>### Part Two: Ember Component
 
-text
+Ember has a checkbox input helper-  [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. 
+
+
 
 ### Part Three: Abstracting for reuse
 
 text
-
-### Conclusion
 
 ### References
 
@@ -92,4 +92,6 @@ text
 * [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
 * [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/checkbox\_role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/checkbox_role)
 * [https://codepen.io/jensimmons/pen/KKPzxJa](https://codepen.io/jensimmons/pen/KKPzxJa)
+
+### Conclusion
 
