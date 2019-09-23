@@ -84,7 +84,7 @@ Ember has a checkbox input helper-  [https://guides.emberjs.com/release/template
 
 ### Part Three: Abstracting for reuse
 
-text
+Coming soon
 
 ### References
 
