@@ -55,7 +55,7 @@ If grouping is desired, the `<optgroup>` markup can be used:
 </div>
 ```
 
-
+While multiple selections can be allowed through the use of the `multiple` attribute, and most browsers will show a scrolling list box instead of a single line dropdown. It should be noted, however, that use of the `multiple` attribute is not generally advised, as it can be a confusing interface for users. 
 
 ### Part Two: Ember Component
 
