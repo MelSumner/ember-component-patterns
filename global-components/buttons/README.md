@@ -1,6 +1,8 @@
 # Buttons
 
-Ahh, the simple button. Possibly the simplest component of them all, yet still somehow one that has been the subject of continual confusion in web and application development.
+Ahh, the simple button. Possibly the simplest component of them all, yet still somehow one that has been the subject of continual confusion in web and application development. 
+
+More than just functionality, placement of the button matters! Read more here: [Where to put buttons in forms](https://adamsilver.io/articles/where-to-put-buttons-in-forms/) by Adam Silver. 
 
 ### Introduction
 
