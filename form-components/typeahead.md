@@ -33,7 +33,7 @@ There are four forms of autocomplete that are acceptable:
       <input aria-autocomplete="list" aria-controls="listbox-001" id="typeaheadInput-001" type="text" />
     </div>
     <ul aria-labelledby="label-001" role="listbox" id="listbox-001" class="listbox hidden">
-        <li class="listbox-result" role="option" id="option-001">Watermelon</li>
+        <li class="listbox-result" role="option" id="option-001">An option example</li>
         <-- This will likely be a long list -->
     </ul>
   </div>
