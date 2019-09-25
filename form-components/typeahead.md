@@ -101,7 +101,7 @@ In the `typeahead.hbs` file, the template code can be added:
 </div>
 ```
 
-//TODO abstract show/hide
+//TODO abstract/add show/hide
 
 #### Component JS
 
