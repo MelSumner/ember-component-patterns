@@ -23,6 +23,23 @@ There are four forms of autocomplete that are acceptable:
 
 ### Part One: Markup
 
+```markup
+<div class="form-group">
+  <label for="typeaheadInput-001" id="label-001" class="combobox-label">
+    Choice or Search Label Text
+  </label>
+  <div class="combobox-wrapper">
+    <div role="combobox" aria-expanded="false" aria-owns="listbox-001" aria-haspopup="listbox" id="combobox-001">
+      <input aria-autocomplete="list" aria-controls="listbox-001" id="typeaheadInput-001" type="text" />
+    </div>
+    <ul aria-labelledby="label-001" role="listbox" id="listbox-001" class="listbox hidden">
+        <li class="listbox-result" role="option" id="option-001">Watermelon</li>
+        <-- This will likely be a long list -->
+    </ul>
+  </div>
+</div>
+```
+
 #### Keyboard Interactions
 
 | Key | Action |
