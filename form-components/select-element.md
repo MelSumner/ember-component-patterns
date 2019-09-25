@@ -96,7 +96,7 @@ Becomes this component template:
   <label for={{this.selectId}}>{{@selectLabelText}}</label>
   <select id={{this.selectId}} name={{@selectName}}>
     {{#each selectOptions as |selectOption|}}
-      <option value={{selectOption.name}}>{{selectOption.name}}</option>
+      <option value={{selectOption}}>{{selectOption}}</option>
     {{/each}}
   </select>
 </div>
@@ -117,7 +117,7 @@ export default class InputSelectComponent extends Component {
 Then, the component can be used in the view or page template: 
 
 ```markup
-<InputSelect @selectLabelText="Color Preference" @selectName="colorPrefs" />
+<InputSelect @selectLabelText="Option List" @selectName="optionList" />
 ```
 
 #### Considering Attributes
