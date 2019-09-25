@@ -12,7 +12,7 @@ There are benefits to using the `<button>` element - semantic HTML is machine-re
 
 ### Part One: Considering Markup
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Link or Button? The rule of thumb is this: if it takes the user to a URL, use a link. Otherwise, use a button!  
 {% endhint %}
 
