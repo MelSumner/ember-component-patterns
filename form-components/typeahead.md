@@ -111,14 +111,19 @@ From the template code above, it is clear that there are multiple associations h
 import Component from '@glimmer/component';
 import { guidFor } from '@ember/object/internals';
 
+let listboxResult = 0;
+
 export default class TypeaheadComponent extends Component {
   inputId = 'typeaheadInput-' + guidFor(this); 
   comboboxId = 'combobox-' + guidFor(this);
   listboxId = 'listbox-' + guidFor(this);
   labelId = 'label-' + guidFor(this);
-  optionId = 'option-' + guidFor(this);
+  optionId = 'option-' + listboxResult++;
 
-  listboxOptions = ['option1', 'option2']; //a/\//\
+  listboxOptions = [ 
+    <!-- option list here -->
+// options here 
+  ];//a/\//\
 }
 ```
 
