@@ -1,4 +1,0 @@
-# Accordion
-
-Coming Soon!
-
