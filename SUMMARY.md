@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Ember Component Patterns](README.md)
+* [FAQs](faqs.md)
 
 ## Global Components
 
