@@ -121,9 +121,8 @@ export default class TypeaheadComponent extends Component {
   optionId = 'option-' + listboxResult++;
 
   listboxOptions = [ 
-    <!-- option list here -->
-// options here 
-  ];//a/\//\
+  // options here
+  ];
 }
 ```
 
