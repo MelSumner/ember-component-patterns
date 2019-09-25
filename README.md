@@ -36,11 +36,3 @@ What one can obtain from this collection of patterns depends on the reader; howe
 * reference to help you more accurately know base requirements for the new feature\(s\) you want to add to your project
 * confidently plan out projects more accurately by reducing "unknown unknowns"
 
-
-
-{% hint style="info" %}
-Contributions are welcome! Contact Melanie Sumner \(@Melanie\#1618 on [Ember Discord](https://discord.gg/emberjs)\) for more information. 
-{% endhint %}
-
-
-
