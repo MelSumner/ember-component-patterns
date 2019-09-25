@@ -132,4 +132,5 @@ coming soon!
 
 * [https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement)
 * [https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1](https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1) 
+* Listbox Keyboard Interaction: [https://www.w3.org/TR/wai-aria-practices/\#listbox\_kbd\_interaction](https://www.w3.org/TR/wai-aria-practices/#listbox_kbd_interaction)
 
