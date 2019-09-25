@@ -8,7 +8,7 @@ As a general rule, the `<select>` element should be used \(instead of radio butt
 2. there are a large number of _familiar_ options available \(there is no need to be able to compare the options\)
 3. the default choice is the recommended choice
 
-It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those use cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, create additional components that serve the more complex purposes. 
+It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those use cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, additional components should be created that serve more complex use cases. 
 
 ### Part One: Markup
 
@@ -133,4 +133,5 @@ coming soon!
 * [https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement)
 * [https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1](https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1) 
 * Listbox Keyboard Interaction: [https://www.w3.org/TR/wai-aria-practices/\#listbox\_kbd\_interaction](https://www.w3.org/TR/wai-aria-practices/#listbox_kbd_interaction)
+* Styled Single Selects: [https://scottaohara.github.io/a11y\_styled\_form\_controls/src/select/](https://scottaohara.github.io/a11y_styled_form_controls/src/select/)
 
