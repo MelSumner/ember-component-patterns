@@ -103,3 +103,7 @@ Check [https://emberobserver.com/](https://emberobserver.com/) for a list of all
 * [https://www.scottohara.me/blog/2016/09/07/revised-modal-window.html](https://www.scottohara.me/blog/2016/09/07/revised-modal-window.html)
 * [https://github.com/gdkraus/accessible-modal-dialog](https://github.com/gdkraus/accessible-modal-dialog)
 
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
+{% endhint %}
+
