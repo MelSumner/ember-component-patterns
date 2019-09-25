@@ -1,7 +1,3 @@
----
-description: Current WIP
----
-
 # Navbar
 
 ### Introduction
@@ -26,12 +22,14 @@ If there will be more than one `<nav>` element on a page, then each `<nav>` elem
 
 The primary navbar should be consistent across the entire site- meaning, the links presented in the navbar should not change when the user visits different pages. 
 
+//TODO adding toggle for mobile nav support
+
 #### Keyboard Support
 
 | Key | Function |
 | :--- | :--- |
-| `ESC` | If there is a drop down, pressing the `ESC` key should close it |
 | `TAB` | Traverse through the active links |
+| `ESC` | should close any open sub-navigation lists |
 
 ### Part Two: Creating the Ember Component
 
@@ -52,16 +50,34 @@ Three files will be created:
 Convert the HTML markup: 
 
 ```markup
-(template here)
+<nav>
+  <ul class="navbar-list">
+    {{#each this.navLinks as |link| }}
+      <li><a href={{link.href}}>{{link.name}}</a></li>
+    {{/each}}
+  </ul>
+</nav>
 ```
 
 #### Component
 
-In the navbar.js file, some functionality will need to be defined: 
+In the `navbar.js` file, some functionality will need to be defined. For this example, routes "alpha" and "bravo" represent  sample routes: 
 
 ```text
-component.js
+import Component from '@glimmer/component';
+
+export default class NavbarComponent extends Component {
+  navLinks = [{
+    "href": '/alpha',
+    "name": 'Alpha'
+  }, {
+    "href": '/bravo',
+    "name": 'Bravo'
+  }];
+}
 ```
+
+//TODO add actions associated with toggle
 
 #### Component Invocation
 
