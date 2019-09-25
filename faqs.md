@@ -15,5 +15,11 @@ This is not an addon because each app will have different needs and requirements
 
 It's likely that your favorite component pattern isn't here yet because it hasn't been added yet. Or it's a carousel and those will never be here because they should never be used. 
 
+## You made a mistake! How do I tell you about it?
+
+Thanks for catching it! Please file an issue here: [https://github.com/MelSumner/ember-component-patterns/issues](https://github.com/MelSumner/ember-component-patterns/issues).
+
+
+
 
 
