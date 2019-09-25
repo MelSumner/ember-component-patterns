@@ -93,8 +93,8 @@ In the `typeahead.hbs` file, the template code can be added:
         role="listbox"
         id={{this.listboxId}}
         class="listbox hidden">
-      {{#each this.listboxOptions as |option| }}
-        <li class="listbox-result" role="option" id={{this.optionId}}>{{option}}</li>
+      {{#each this.listboxOptions as |option index| }}
+        <li class="listbox-result" role="option" id="{{this.listboxId}}-{{index}}">{{option}}</li>
       {{/each}}
     </ul>
   </div>
@@ -111,14 +111,11 @@ From the template code above, it is clear that there are multiple associations h
 import Component from '@glimmer/component';
 import { guidFor } from '@ember/object/internals';
 
-let listboxResult = 0;
-
 export default class TypeaheadComponent extends Component {
   inputId = 'typeaheadInput-' + guidFor(this); 
   comboboxId = 'combobox-' + guidFor(this);
   listboxId = 'listbox-' + guidFor(this);
   labelId = 'label-' + guidFor(this);
-  optionId = 'option-' + listboxResult++;
 
   listboxOptions = [ 
   // options here
