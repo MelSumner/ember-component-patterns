@@ -97,5 +97,7 @@ Finally, it is important to consider high-contrast settings. Here is a media que
 }
 ```
 
-To see some opinionated styles in action, visit the [CodePen sample](https://codepen.io/melsumner/pen/9333b9017df850d9fbdd0dd8f805741a) specifically created for this purpose. 
+To see some opinionated styles in action, visit the [CodePen sample](https://codepen.io/melsumner/pen/9333b9017df850d9fbdd0dd8f805741a) specifically created for this purpose. Here's a sneak peek: 
+
+![Semantic-yet-styled radio buttons](../../.gitbook/assets/image%20%289%29.png)
 
