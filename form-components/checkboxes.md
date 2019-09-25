@@ -4,7 +4,7 @@
 
 Checkboxes are a useful input element to use when it is desirable to allow users to select more than one option. Checkboxes can have three states: checked, not checked, and indeterminate. 
 
-### Part One: Markup
+### Part One: Considering Markup
 
 Sometimes, a single checkbox is desirable. In these cases, a checkbox input only requires an associated label input: 
 
@@ -76,7 +76,7 @@ If the user should be able to select more than one option, a checkbox group shou
       </td>
     </tr>
   </tbody>
-</table>### Part Two: Ember Component
+</table>### Part Two: Creating the Ember Component
 
 Ember has a checkbox input helper-  [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. 
 
@@ -84,7 +84,7 @@ Ember has a checkbox input helper-  [https://guides.emberjs.com/release/template
 
 ### Part Three: Abstracting for reuse
 
-Coming soon
+Coming soon!
 
 ### References
 

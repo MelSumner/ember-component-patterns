@@ -18,7 +18,7 @@
   * [Antipatterns: Radio Buttons](form-components/radio-buttons/antipatterns-radio-buttons.md)
   * [Styling: Radio Buttons](form-components/radio-buttons/styling-radio-buttons.md)
 * [Select Element](form-components/select-element.md)
-* [Typeahead](form-components/typeahead.md)
+* [Typeahead/Combobox](form-components/typeahead.md)
 
 ## Navigation
 

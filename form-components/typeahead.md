@@ -1,8 +1,4 @@
----
-description: AKA Combobox.
----
-
-# Typeahead
+# Typeahead/Combobox
 
 ### Introduction
 
@@ -21,7 +17,7 @@ There are four forms of autocomplete that are acceptable:
 
 
 
-### Part One: Markup
+### Part One: Considering Markup
 
 ```markup
 <div class="form-group">
@@ -51,7 +47,7 @@ There are four forms of autocomplete that are acceptable:
 
 The keyboard interactions are important here, because there is definitely the risk of introducing serious keyboard navigation flaws -- the focus could escape the listbox and continue down the page, or conversely, the focus could get trapped inside of the listbox and never allow the user to escape out of the list. 
 
-### Part Two: Ember Component
+### Part Two: Creating the Ember Component
 
 #### Generate the component
 

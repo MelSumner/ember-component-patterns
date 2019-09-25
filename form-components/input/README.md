@@ -143,7 +143,7 @@ aria-invalid="true" />
 
 Note the `aria-describedby` attribute on the `input` field, whose value matches the `id` of the element that contains the error message.
 
-### Part Two: Ember Component\(s\)
+### Part Two: Creating the Ember Component\(s\)
 
 First, the appropriate requirements should be gathered.
 

@@ -10,7 +10,7 @@ As a general rule, the `<select>` element should be used \(instead of radio butt
 
 It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those use cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, additional components should be created that serve more complex use cases. 
 
-### Part One: Markup
+### Part One: Considering Markup
 
 The select element markup is rather straight-forward- all of the options are grouped together in one list, or option groups are indicated. 
 
@@ -60,7 +60,7 @@ If grouping is desired, the `<optgroup>` markup can be used:
 
 While multiple selections can be allowed through the use of the `multiple` attribute, and most browsers will show a scrolling list box instead of a single line dropdown. It should be noted, however, that use of the `multiple` attribute is not generally advised, as it can be a confusing interface for users. 
 
-### Part Two: Ember Component
+### Part Two: Creating the Ember Component
 
 The component should be generated \(via ember-cli\): 
 
