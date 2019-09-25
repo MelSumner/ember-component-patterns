@@ -145,7 +145,7 @@ Note the `aria-describedby` attribute on the `input` field, whose value matches 
 
 ### Part Two: Ember Component\(s\)
 
-First, the appropriate requirements should be gathered 
+First, the appropriate requirements should be gathered.
 
 Next, the component should be generated:
 

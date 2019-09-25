@@ -59,15 +59,71 @@ While multiple selections can be allowed through the use of the `multiple` attri
 
 ### Part Two: Ember Component
 
-text
+The component should be generated \(via ember-cli\): 
+
+```bash
+ember generate component input-select -gc
+```
+
+This will create three files and put them in the correct location: 
+
+* app/components/input-select.hbs
+* app/components/input-select.js
+* tests/integration/components/input-select-test.js
+
+In **app/components/input-select.hbs**, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
+
+So this markup: 
+
+```markup
+<div class="form-select">
+  <label for="selectId">Label Text</label>
+  <select id="selectId" name="select-name">
+    <option value="option-one">Option One</option>
+    <option value="option-two">Option Two</option>
+    <option value="option-three">Option Three</option>
+  </select>
+</div>
+```
+
+Becomes this component template: 
+
+```markup
+<div class="form-select">
+  <label for={{this.selectId}}>{{@selectLabelText}}</label>
+  <select id={{this.selectId}} name={{@selectName}}>
+    {{#each selectOptions as |selectOption|}}
+      <option value={{selectOption.name}}>{{selectOption.name}}</option>
+    {{/each}}
+  </select>
+</div>
+```
+
+In **app/components/input-select.js**, the select `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
+
+```javascript
+import Component from '@glimmer/component';
+import { guidFor } from '@ember/object/internals';
+
+export default class InputSelectComponent extends Component {
+  selectId = 'select-' + guidFor(this); 
+  selectedOptions = ['optionOne', 'optionTwo', 'optionThree'];
+}
+```
+
+Then, the component can be used in the view or page template: 
+
+```markup
+<InputSelect @selectLabelText="Color Preference" @selectName="colorPrefs" />
+```
+
+#### Considering Attributes
+
+Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. 
 
 ### Part Three: Abstracting for Reuse
 
 coming soon!
-
-### Conclusion
-
-text
 
 ### References
 

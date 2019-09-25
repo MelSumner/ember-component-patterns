@@ -8,7 +8,7 @@ Checkboxes are a useful input element to use when it is desirable to allow users
 
 Sometimes, a single checkbox is desirable. In these cases, a checkbox input only requires an associated label input: 
 
-```text
+```markup
 <div class="form-group">
   <input type="checkbox" id="input_checkbox" name="terms-confirmation" />
   <label for="input_checkbox">I confirm that I have read the terms and conditions</label>
@@ -17,7 +17,7 @@ Sometimes, a single checkbox is desirable. In these cases, a checkbox input only
 
 If the user should be able to select more than one option, a checkbox group should be used. To ensure that all of the checkboxes are associated with the single group, the `name` attribute value should be the same: 
 
-```text
+```markup
 <fieldset>
   <legend>What kind of jobs are you interested in (select all that apply)?</legend>
   <div class="form-checkbox">
