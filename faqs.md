@@ -9,7 +9,7 @@ description: >-
 
 ## Why don't you make this into an addon?
 
-This is not an addon because each app will have different needs and requirements. Instead, this guide is intended to demonstrate best practices so teams can build the components that are right for their project.
+This is not an addon because each app will have different needs and requirements. Instead, this guide is intended to demonstrate best practices so teams can build the components that are right for their project. Additionally, an addon requires maintenance, which is a non-negligible set of work on its own. 
 
 ## Why isn't \(insert component name here\) in this guide?
 
