@@ -22,7 +22,9 @@ Mark up for a navbar is surprisingly simple:
 </nav>
 ```
 
+If there will be more than one `<nav>` element on a page, then each `<nav>` element should be given an `aria-label` attribute with a unique value. 
 
+The primary navbar should be consistent across the entire site- meaning, the links presented in the navbar should not change when the user visits different pages. 
 
 #### Keyboard Support
 
