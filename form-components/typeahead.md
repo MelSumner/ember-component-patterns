@@ -27,16 +27,97 @@ There are four forms of autocomplete that are acceptable:
 
 | Key | Action |
 | :--- | :--- |
-| UP arrow / DOWN arrow  | cycle through the auto-suggestions and input field |
+| arrow keys         | cycle through the auto-suggestions and input field |
 | `ESC` | close the listbox \(if open\) |
 | `ENTER` | select the currently focused auto-suggestion item and close the listbox |
 | `TAB` | select the currently focused auto-suggestion, close the menu, and move focus to the next focusable element |
 
-text
+The keyboard interactions are important here, because there is definitely the risk of introducing serious keyboard navigation flaws -- the focus could escape the listbox and continue down the page, or conversely, the focus could get trapped inside of the listbox and never allow the user to escape out of the list. 
 
 ### Part Two: Ember Component
 
-text
+#### Generate the component
+
+```text
+ember generate component typeahead -gc
+```
+
+Three files will be created:
+
+* app/components/typeahead.js
+* app/components/typeahead.hbs
+* tests/integration/components/typeahead-test.js
+
+A few styles will need to be added, but the method to do so will depend on the overall CSS approach for the application. 
+
+#### Add template code
+
+In the `typeahead.hbs` file, the template code can be added: 
+
+```markup
+<div class="form-group">
+  <label for={{this.inputId}}
+       id={{this.labelId}}
+       class="combobox-label">
+    {{@typeaheadLabelText}}
+  </label>
+  <div class="combobox-wrapper">
+    <div role="combobox"
+        aria-expanded="false"
+        aria-owns={{this.listboxId}}
+        aria-haspopup="listbox"
+        id={{this.comboboxId}}>
+      <input type="text"
+            aria-autocomplete="list"
+            aria-controls={{this.listboxId}}
+            id={{this.inputId}}>
+    </div>
+    <ul aria-labelledby={{this.labelId}}
+        role="listbox"
+        id={{this.listboxId}}
+        class="listbox hidden">
+      {{#each this.listboxOptions as |option| }}
+        <li class="listbox-result" role="option" id={{this.optionId}}>{{option}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+```
+
+//TODO abstract show/hide
+
+#### Component JS
+
+From the template code above, it is clear that there are multiple associations happening for accessibility reasons. Using the same approach as for other form components, unique IDs can be generated: 
+
+```javascript
+import Component from '@glimmer/component';
+import { guidFor } from '@ember/object/internals';
+
+export default class TypeaheadComponent extends Component {
+  inputId = 'typeaheadInput-' + guidFor(this); 
+  comboboxId = 'combobox-' + guidFor(this);
+  listboxId = 'listbox-' + guidFor(this);
+  labelId = 'label-' + guidFor(this);
+  optionId = 'option-' + guidFor(this);
+
+  listboxOptions = ['option1', 'option2']; //a/\//\
+}
+```
+
+//TODO the results list is returning the same ID so need to increment instead of just returning the guid. 
+
+//TODO add keyboard support
+
+#### Using the Component
+
+The component is now ready to be used in the page or form template file:
+
+```markup
+<Typeahead @typeaheadLabelText="Choice or Search Label Text" />
+```
+
+
 
 ### Part Three: Abstracting for Reuse
 
@@ -44,4 +125,5 @@ coming soon!
 
 ### References
 
-* 
+* WAI-ARIA Authoring Practices 1.1 - Combo Box - [https://www.w3.org/TR/wai-aria-practices/\#combobox](https://www.w3.org/TR/wai-aria-practices/#combobox)
+
