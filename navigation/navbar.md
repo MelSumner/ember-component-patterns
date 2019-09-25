@@ -6,7 +6,7 @@ description: Current WIP
 
 ### Introduction
 
-text
+Using the `<nav>` element can make groups of links easier to locate and skip past by users of assistive technology such as screen readers. 
 
 ### Part One: Considering Markup
 
@@ -78,6 +78,8 @@ Coming Soon!
 ### References: 
 
 * "[Don't use ARIA Menu Roles for Site Nav](http://adrianroselli.com/2017/10/dont-use-aria-menu-roles-for-site-nav.html)" by Adrian Roselli
+* Related technique: [Using ARIA landmarks to identify regions of a page](http://www.w3.org/TR/WCAG20-TECHS/ARIA11.html)
+* Related technique: [Using semantic elements to markup structure](http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G115)
 * 
 {% hint style="info" %}
 Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
