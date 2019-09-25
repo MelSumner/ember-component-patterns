@@ -145,3 +145,7 @@ coming soon!
 
 * WAI-ARIA Authoring Practices 1.1 - Combo Box - [https://www.w3.org/TR/wai-aria-practices/\#combobox](https://www.w3.org/TR/wai-aria-practices/#combobox)
 
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
+{% endhint %}
+

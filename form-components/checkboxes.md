@@ -93,5 +93,7 @@ Coming soon
 * [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/checkbox\_role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/checkbox_role)
 * [https://codepen.io/jensimmons/pen/KKPzxJa](https://codepen.io/jensimmons/pen/KKPzxJa)
 
-### Conclusion
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
+{% endhint %}
 

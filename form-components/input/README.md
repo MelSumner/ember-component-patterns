@@ -266,6 +266,6 @@ coming soon!
 * [https://api.emberjs.com/ember/release/functions/@ember%2Fobject%2Finternals/guidFor](https://api.emberjs.com/ember/release/functions/@ember%2Fobject%2Finternals/guidFor)
 
 {% hint style="info" %}
-Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue or submit a PR.
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
 {% endhint %}
 

@@ -135,3 +135,7 @@ coming soon!
 * Listbox Keyboard Interaction: [https://www.w3.org/TR/wai-aria-practices/\#listbox\_kbd\_interaction](https://www.w3.org/TR/wai-aria-practices/#listbox_kbd_interaction)
 * Styled Single Selects: [https://scottaohara.github.io/a11y\_styled\_form\_controls/src/select/](https://scottaohara.github.io/a11y_styled_form_controls/src/select/)
 
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
+{% endhint %}
+

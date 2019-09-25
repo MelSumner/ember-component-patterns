@@ -198,6 +198,6 @@ If it is desirable to allow some attributes to be changed when the component is 
 6. [Styling: Radio Buttons](styling-radio-buttons.md)
 
 {% hint style="info" %}
-Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue or submit a PR.
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
 {% endhint %}
 

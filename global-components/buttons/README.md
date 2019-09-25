@@ -138,7 +138,9 @@ The component can then be added to the page template:
 * [&lt;button&gt;: The Button Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
 * [When to Use The Button Element](https://css-tricks.com/use-button-element/)
 
-
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
+{% endhint %}
 
 
 
