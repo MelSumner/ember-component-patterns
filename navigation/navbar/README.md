@@ -63,7 +63,7 @@ Convert the HTML markup:
 
 In the `navbar.js` file, some functionality will need to be defined. For this example, routes "alpha" and "bravo" represent  sample routes: 
 
-```text
+```javascript
 import Component from '@glimmer/component';
 
 export default class NavbarComponent extends Component {

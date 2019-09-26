@@ -32,6 +32,10 @@
 * [Modal](messaging/modals.md)
 * [Alerts](messaging/alerts.md)
 
+## Complex Components
+
+* [Tabs](complex-components/tabs.md)
+
 ## General Considerations
 
 * [Use of aria-live](general-considerations/use-of-aria-live.md)
