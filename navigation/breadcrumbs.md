@@ -42,7 +42,7 @@ Coming Soon! Until then, review the Ember addon [Ember Breadcrumbs](https://gith
 
 ### References
 
-* * [Accessible Breadcrumbs](https://scottaohara.github.io/a11y_breadcrumbs/) by Scott O'Hara
+* [Accessible Breadcrumbs](https://scottaohara.github.io/a11y_breadcrumbs/) by Scott O'Hara
 * WAI-ARIA [Accessible Breadcrumbs](https://w3c.github.io/aria-practices/examples/breadcrumb/index.html)
 
 {% hint style="info" %}
