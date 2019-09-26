@@ -34,7 +34,61 @@ The dividers between each list item should be created via CSS \(alone\), using p
 
 ### Part Two: Creating the Ember Component
 
-//TODO
+#### Generate the Component
+
+```text
+ember generate component breadcrumbs -gc
+```
+
+Three files will be created:
+
+* app/components/breadcrumbs.js
+* app/components/breadcrumbs.hbs
+* tests/integration/components/breadcrumbs-test.js
+
+#### Template
+
+Add the markup into the template, changing some of the dynamic pieces: 
+
+```markup
+<nav class="breadcrumb-nav" aria-label={{@ariaLabelText}}>
+  <ol>
+    {{#each this.breadcrumbs as |breadcrumb|}}
+      <li>
+        <a href={{breadcrumb.route}}>
+          {{breadcrumb.name}}
+        </a>
+      </li>
+    {{/each}}
+  </ol>
+</nav>
+```
+
+#### Component
+
+Add the breadcrumbs object to the component file. For this example, two routes named Alpha and Bravo have been added to the application: 
+
+```javascript
+import Component from '@glimmer/component';
+
+export default class BreadcrumbsComponent extends Component {
+  breadcrumbs = [{
+    "route": '/alpha',
+    "name": 'Alpha'
+  }, {
+    "route": '/bravo',
+    "name": 'Bravo'
+  }];
+}
+```
+
+#### Component Invocation
+
+The component can now be placed in the page or view template: 
+
+```markup
+<Breadcrumbs @ariaLabelText="Breadcrumbs" />
+```
 
 ### Part Three: Abstracting for Reuse
 
