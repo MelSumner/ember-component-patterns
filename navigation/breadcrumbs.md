@@ -6,7 +6,7 @@ Breadcrumbs are a useful features for large websites that have the proper logica
 
 ### Part One: Considering Markup
 
-//TODO
+Breadcrumbs should be structured as a set of links using an ordered list:
 
 ```markup
 <nav class="breadcrumb-nav" aria-label="Breadcrumb">
