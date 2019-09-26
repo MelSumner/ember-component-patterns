@@ -2,9 +2,7 @@
 
 ### Introduction
 
-//TODO
-
-Breadcrumbs are useful on large websites -- single-level websites should not use them. 
+Breadcrumbs are a useful features for large websites that have the proper logical hierarchy  of content -- single-level websites do not need them \(and should not use them\). 
 
 ### Part One: Considering Markup
 
@@ -40,12 +38,12 @@ The dividers between each list item should be created via CSS \(alone\), using p
 
 ### Part Three: Abstracting for Reuse
 
-Coming Soon! 
+Coming Soon! Until then, review the Ember addon [Ember Breadcrumbs](https://github.com/chrisfarber/ember-breadcrumbs) to determine if it will suit your needs. 
 
 ### References
 
-* Addon: [Ember Breadcrumbs](https://github.com/chrisfarber/ember-breadcrumbs)
-* [Accessible Breadcrumbs](https://scottaohara.github.io/a11y_breadcrumbs/) by Scott O'Hara
+* * [Accessible Breadcrumbs](https://scottaohara.github.io/a11y_breadcrumbs/) by Scott O'Hara
+* WAI-ARIA [Accessible Breadcrumbs](https://w3c.github.io/aria-practices/examples/breadcrumb/index.html)
 
 {% hint style="info" %}
 Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.

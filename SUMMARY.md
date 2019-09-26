@@ -22,7 +22,8 @@
 
 ## Navigation
 
-* [Navbar](navigation/navbar.md)
+* [Navbar](navigation/navbar/README.md)
+  * [Antipatterns: Navbars](navigation/navbar/antipatterns-navbars.md)
 * [Breadcrumbs](navigation/breadcrumbs.md)
 * [Pagination](navigation/pagination.md)
 
