@@ -1,12 +1,12 @@
 # Navbar
 
-### Introduction
+## Introduction
 
-Using the `<nav>` element can make groups of links easier to locate and skip past by users of assistive technology such as screen readers. 
+Using the `<nav>` element can make groups of links easier to locate and skip past by users of assistive technology such as screen readers.
 
-### Part One: Considering Markup
+## Part One: Considering Markup
 
-Mark up for a navbar is surprisingly simple: 
+Mark up for a navbar is surprisingly simple:
 
 ```markup
 <nav>
@@ -18,22 +18,22 @@ Mark up for a navbar is surprisingly simple:
 </nav>
 ```
 
-If there will be more than one `<nav>` element on a page, then each `<nav>` element should be given an `aria-label` attribute with a unique value. 
+If there will be more than one `<nav>` element on a page, then each `<nav>` element should be given an `aria-label` attribute with a unique value.
 
-The primary navbar should be consistent across the entire site- meaning, the links presented in the navbar should not change when the user visits different pages. 
+The primary navbar should be consistent across the entire site- meaning, the links presented in the navbar should not change when the user visits different pages.
 
 //TODO adding toggle for mobile nav support
 
-#### Keyboard Support
+### Keyboard Support
 
 | Key | Function |
 | :--- | :--- |
 | `TAB` | Traverse through the active links |
 | `ESC` | should close any open sub-navigation lists |
 
-### Part Two: Creating the Ember Component
+## Part Two: Creating the Ember Component
 
-#### Generate the component: 
+### Generate the component:
 
 ```text
 ember generate component navbar -gc
@@ -45,9 +45,9 @@ Three files will be created:
 * app/components/navbar.hbs
 * tests/integration/components/navbar-test.js
 
-#### Template
+### Template
 
-Convert the HTML markup: 
+Convert the HTML markup:
 
 ```markup
 <nav>
@@ -59,9 +59,9 @@ Convert the HTML markup:
 </nav>
 ```
 
-#### Component
+### Component
 
-In the `navbar.js` file, some functionality will need to be defined. For this example, routes "alpha" and "bravo" represent  sample routes: 
+In the `navbar.js` file, some functionality will need to be defined. For this example, routes "alpha" and "bravo" represent sample routes:
 
 ```javascript
 import Component from '@glimmer/component';
@@ -79,19 +79,19 @@ export default class NavbarComponent extends Component {
 
 //TODO add actions associated with toggle
 
-#### Component Invocation
+### Component Invocation
 
-To use the component in a page or view template, add: 
+To use the component in a page or view template, add:
 
 ```text
 <Navbar />
 ```
 
-### Part Three: Abstracting for Reuse
+## Part Three: Abstracting for Reuse
 
-Coming Soon! 
+Coming Soon!
 
-### References: 
+## References:
 
 * "[Don't use ARIA Menu Roles for Site Nav](http://adrianroselli.com/2017/10/dont-use-aria-menu-roles-for-site-nav.html)" by Adrian Roselli
 * Related technique: [Using ARIA landmarks to identify regions of a page](http://www.w3.org/TR/WCAG20-TECHS/ARIA11.html)
@@ -100,6 +100,4 @@ Coming Soon!
 {% hint style="info" %}
 Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
 {% endhint %}
-
-
 
