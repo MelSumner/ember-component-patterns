@@ -4,7 +4,7 @@ General guidelines for images Images can be used to enhance a website's visual p
 
 #### ALT attributes
 
-All &lt;img&gt; elements must have an `alt` attribute. 
+All `<img>` elements must have an `alt` attribute. 
 
 If the image is purely decorative, leave the alt attribute empty and add role="presentation", like this: 
 
