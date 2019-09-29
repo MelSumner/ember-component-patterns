@@ -19,7 +19,7 @@ Code example:
 
 This should be considered unacceptable for the following reasons: 
 
-* there is no way for a machine to determine that it is a button
+* there is no machine-readable way to determine that it is a button
 * a div is not an interactive element 
 * non-interactive elements should not have interactions associated with them
 * there is no way to keyboard navigate to this element
