@@ -8,7 +8,7 @@ As a general rule, the `<select>` element should be used \(instead of radio butt
 2. there are a large number of _familiar_ options available \(there is no need to be able to compare the options\)
 3. the default choice is the recommended choice
 
-It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those use cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, additional components should be created that serve more complex use cases. 
+It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those  cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, additional components should be created for complex functionality. 
 
 ### Part One: Considering Markup
 
