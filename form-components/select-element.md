@@ -95,7 +95,7 @@ Becomes this component template:
 <div class="form-select">
   <label for={{this.selectId}}>{{@selectLabelText}}</label>
   <select id={{this.selectId}} name={{@selectName}}>
-    {{#each selectOptions as |selectOption|}}
+    {{#each this.selectOptions as |selectOption|}}
       <option value={{selectOption}}>{{selectOption}}</option>
     {{/each}}
   </select>
