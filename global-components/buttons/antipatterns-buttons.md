@@ -25,6 +25,8 @@ This should be considered unacceptable for the following reasons:
 * there is no way to keyboard navigate to this element
 * there is no way to interact with this element using a keyboard
 
+This pattern also causes the [Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML without providing a role for the control](https://www.w3.org/WAI/WCAG21/Techniques/failures/F59).
+
 ### Anti-pattern \#2: The "Almost" button
 
 Code example: 

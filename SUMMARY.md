@@ -3,6 +3,11 @@
 * [Ember Component Patterns](README.md)
 * [FAQs](faqs.md)
 
+## General Considerations
+
+* [Considering Forms](general-considerations/considering-forms.md)
+* [Use of aria-live](general-considerations/use-of-aria-live.md)
+
 ## Global Components
 
 * [Buttons](global-components/buttons/README.md)
@@ -35,8 +40,4 @@
 ## Complex Components
 
 * [Tabs](complex-components/tabs.md)
-
-## General Considerations
-
-* [Use of aria-live](general-considerations/use-of-aria-live.md)
 
