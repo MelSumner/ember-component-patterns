@@ -40,4 +40,6 @@
 ## Complex Components
 
 * [Tabs](complex-components/tabs.md)
+* [Accordions](complex-components/accordions.md)
+* [Datepickers](complex-components/datepickers.md)
 
