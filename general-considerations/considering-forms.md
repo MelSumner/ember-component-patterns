@@ -28,7 +28,7 @@ One approach is to create a [`uuid`](https://en.wikipedia.org/wiki/Universally_u
 
 #### GUIDFOR
 
-Ember also has [`guidFor`](https://api.emberjs.com/ember/release/functions/@ember%2Fobject%2Finternals/guidFor) which returns a unique ID for the object. If the object does not yet have a guid, one will be assigned to it, and it can be called on any object, including DOM element objects. 
+Ember has [`guidFor`](https://api.emberjs.com/ember/release/functions/@ember%2Fobject%2Finternals/guidFor) which returns a unique ID for the object. If the object does not yet have a guid, one will be assigned to it, and it can be called on any object, including DOM element objects. 
 
 {% hint style="info" %}
 While it is also valid to wrap the input in a &lt;label&gt; element and avoid using the `for` attribute entirely, this approach is not advised because it limits the designs that can be used. When considering how the code is written, it is essential to consider flexibility for styling as an integral part of the approach. Set your future up for success!
