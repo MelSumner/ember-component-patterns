@@ -11,7 +11,7 @@ Users expect the following to be true:
 * it should be possible to navigate via keyboard 
 * animations should not be linked to functionality; if the user has disabled animations via system preferences, the checkbox should still be usable
 * there should be a clear indicator of focus
-* clicking on the label for the checkbox should also activate the checkbox itself \(this is done through properly [associating the label](../general-considerations/considering-forms.md#labels) with the checkbox\)
+* clicking on the label for the checkbox should also activate the checkbox itself \(this is done through properly [associating the label](../../general-considerations/considering-forms.md#labels) with the checkbox\)
 
 ### Part One: Considering Markup
 
