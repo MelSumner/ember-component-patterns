@@ -14,20 +14,20 @@ As this project matures, the [anti-patterns](https://en.wikipedia.org/wiki/Anti-
 
 What one can obtain from this collection of patterns depends on the reader; however a few potential types of readers, and possible goals, have been kept in mind. Some examples:  
 
-### Developers
+### For Developers
 
 * write more technically accurate code 
 * worry a little bit less about writing code that is not accessible
 * have easy-to-reference base requirements for common component patterns
 * have confidence in the code you produce
 
-### Designers
+### For Designers
 
 * understand what components really need to have from a functional perspective
 * ensure that designs will include the necessary functionality and accessibility
 * focus on design within clear technical constraints
 
-### BAs & TPMs
+### For BAs & TPMs
 
 * reference to help you more accurately know base requirements for the new feature\(s\) you want to add to your project
 * confidently plan out projects more accurately by reducing "unknown unknowns"
