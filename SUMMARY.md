@@ -12,6 +12,7 @@
 
 * [Buttons](global-components/buttons/README.md)
   * [Anti-patterns: Buttons](global-components/buttons/antipatterns-buttons.md)
+* [Images](global-components/images.md)
 
 ## Form Components
 
