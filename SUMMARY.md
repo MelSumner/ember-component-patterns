@@ -6,7 +6,7 @@
 ## Global Components
 
 * [Buttons](global-components/buttons/README.md)
-  * [Antipatterns: Buttons](global-components/buttons/antipatterns-buttons.md)
+  * [Anti-patterns: Buttons](global-components/buttons/antipatterns-buttons.md)
 
 ## Form Components
 
