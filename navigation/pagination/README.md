@@ -20,9 +20,14 @@ A pagination component should resemble this when rendered in the browser:
 ```markup
 <nav aria-label="pagination navigation">
     <ul>
+      <li><a href="/page-2">Previous</a></li>
       <li><a href="/page-1">1</a></li>
-      <li><a href="/page-2">2</a></li>
+      <li><a href="/page-2" aria-current="page">2</a></li>
       <li><a href="/page-3">3</a></li>
+      <li><a href="/page-4">4</a></li>
+      <li><a href="/page-5">5</a></li>
+      <li><a href="/page-3">Next</a></li>
+      
     </ul>
 </nav>
 ```

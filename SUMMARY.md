@@ -33,7 +33,8 @@
 * [Navbar](navigation/navbar/README.md)
   * [Anti-patterns: Navbar](navigation/navbar/antipatterns-navbars.md)
 * [Breadcrumbs](navigation/breadcrumbs.md)
-* [Pagination](navigation/pagination.md)
+* [Pagination](navigation/pagination/README.md)
+  * [Styling: Pagination](navigation/pagination/styling-pagination.md)
 
 ## Messaging
 
