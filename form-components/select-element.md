@@ -93,8 +93,8 @@ Becomes this component template:
 
 ```markup
 <div class="form-select">
-  <label for={{this.selectId}}>{{@selectLabelText}}</label>
-  <select id={{this.selectId}} name={{@selectName}}>
+  <label for={{this.selectId}}>{{this.selectLabelText}}</label>
+  <select id={{this.selectId}} name={{this.selectName}}>
     {{#each this.selectOptions as |selectOption|}}
       <option value={{selectOption}}>{{selectOption}}</option>
     {{/each}}
@@ -111,13 +111,15 @@ import { guidFor } from '@ember/object/internals';
 export default class InputSelectComponent extends Component {
   selectId = 'select-' + guidFor(this); 
   selectedOptions = ['optionOne', 'optionTwo', 'optionThree'];
+  selectLabelText = 'Option List';
+  selectName = 'optionList';
 }
 ```
 
 Then, the component can be used in the view or page template: 
 
 ```markup
-<InputSelect @selectLabelText="Option List" @selectName="optionList" />
+<InputSelect />
 ```
 
 #### Considering Attributes
@@ -126,7 +128,43 @@ Any form input planning should include considerations for which attributes shoul
 
 ### Part Three: Abstracting for Reuse
 
-coming soon!
+To create something more flexible, allow for definition upon invocation: 
+
+#### Template 
+
+```markup
+<div class="form-select">
+  <label for={{this.selectId}}>{{@selectLabelText}}</label>
+  <select id={{this.selectId}} name={{@selectName}}>
+    {{#each @selectOptions as |selectOption|}}
+      <option value={{selectOption}}>{{selectOption}}</option>
+    {{/each}}
+  </select>
+</div>
+```
+
+#### Component
+
+```javascript
+import Component from '@glimmer/component';
+import { guidFor } from '@ember/object/internals';
+
+export default class InputSelectComponent extends Component {
+  selectId = 'select-' + guidFor(this); 
+}
+```
+
+#### Invocation
+
+```markup
+<InputSelect
+  @selectedLabelText="Option List Label Text"
+  @selectedName="optionList"
+  @selectedOptions="['optionOne', 'optionTwo', 'optionThree']"
+/>
+```
+
+//todo fix line 4, what's the syntax for local args as an array?
 
 ### References
 
