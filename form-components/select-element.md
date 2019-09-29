@@ -160,11 +160,9 @@ export default class InputSelectComponent extends Component {
 <InputSelect
   @selectedLabelText="Option List Label Text"
   @selectedName="optionList"
-  @selectedOptions=(array 'optionOne' 'optionTwo' 'optionThree') 
+  @selectedOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
 />
 ```
-
-//todo fix line 4, what's the syntax for local args as an array?
 
 ### References
 
