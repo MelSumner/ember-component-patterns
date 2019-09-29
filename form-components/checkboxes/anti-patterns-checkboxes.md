@@ -24,7 +24,7 @@ Consider this:
 </div>
 ```
 
-At first glance, all might seem fine. However, as assistive technology such as a screen reader will not associate the title and the options correctly, and as such this should be considered an anti-pattern and should be avoided. 
+At first glance, all might seem fine. However, as assistive technology such as a screen reader will not associate the title and the options correctly, this approach should be considered an anti-pattern and should be avoided. 
 
 Instead, use the `<fieldset>` with a `<legend>` to successfully contain and associate the checkbox group. It should be remembered that the default styling for these elements can be overridden and should not be considered a blocker for their use. 
 
