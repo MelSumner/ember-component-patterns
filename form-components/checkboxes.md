@@ -2,7 +2,15 @@
 
 ### Introduction
 
-Checkboxes are a useful input element to use when it is desirable to allow users to select more than one option. Checkboxes can have three states: checked, not checked, and indeterminate. 
+Checkboxes are a useful input element when it is desirable to allow users to select more than one option from a short list of options. Checkboxes can have three states: checked, not checked, and indeterminate. 
+
+#### User Expectations
+
+Users expect the following to be true: 
+
+* it should be possible to navigate via keyboard 
+* animations should not be linked to functionality; if the user has disabled animations via system preferences, the checkbox should still be usable
+* there should be a clear indicator of focus
 
 ### Part One: Considering Markup
 
