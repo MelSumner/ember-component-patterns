@@ -6,7 +6,7 @@ description: >-
 
 # Ember Component Patterns
 
-The goal of this guide is to cultivate a set of patterns that are practical and can reasonably be used by any Ember developer in their application. It is intended to be made publicly available with the release of Ember Octane.
+The goal of this guide is to cultivate a set of patterns that are practical and can reasonably be used by any Ember developer in their application. It is intended to be made publicly available with the [preview release of Ember Octane](https://emberjs.com/editions/octane/).
 
 The component patterns here will, at least initially, be without CSS styling. This is to help clearly delineate form and function. "First, make it useful; then make it beautiful" as the saying goes. When necessary to demonstrate the validity of the approach, however, a sub-section on styling may be added to the pattern if it helps to demonstrate what might otherwise be thought of as impossible.  
 
