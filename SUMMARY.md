@@ -23,7 +23,7 @@
 ## Navigation
 
 * [Navbar](navigation/navbar/README.md)
-  * [Antipatterns: Navbars](navigation/navbar/antipatterns-navbars.md)
+  * [Anti-patterns: Navbar](navigation/navbar/antipatterns-navbars.md)
 * [Breadcrumbs](navigation/breadcrumbs.md)
 * [Pagination](navigation/pagination.md)
 
