@@ -32,3 +32,7 @@ What one can obtain from this collection of patterns depends on the reader; howe
 * reference to help you more accurately know base requirements for the new feature\(s\) you want to add to your project
 * confidently plan out projects more accurately by reducing "unknown unknowns"
 
+{% hint style="info" %}
+Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
+{% endhint %}
+
