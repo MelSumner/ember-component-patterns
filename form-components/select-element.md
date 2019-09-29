@@ -160,7 +160,7 @@ export default class InputSelectComponent extends Component {
 <InputSelect
   @selectedLabelText="Option List Label Text"
   @selectedName="optionList"
-  @selectedOptions="['optionOne', 'optionTwo', 'optionThree']"
+  @selectedOptions=(array 'optionOne' 'optionTwo' 'optionThree') 
 />
 ```
 
