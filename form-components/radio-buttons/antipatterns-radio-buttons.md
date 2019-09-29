@@ -1,8 +1,11 @@
 ---
-description: These are patterns that should be avoided.
+description: >-
+  Anti-patterns produce outcomes that are ineffective because they are not
+  complete solutions, and as such are counterproductive. Developers are advised
+  to be aware of anti-patterns and avoid their use.
 ---
 
-# Antipatterns: Radio Buttons
+# Anti-patterns: Radio Buttons
 
 When considering how to craft a useful radio button group component, it is also necessary to consider what _not_ to do. If any Ember addon is evaluated for use, it is not only the Ember code itself that needs to be evaluated, but the output to the browser itself that should be evaluated. 
 
