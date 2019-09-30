@@ -7,9 +7,9 @@ description: >-
 
 # Anti-patterns: Radio Buttons
 
-When considering how to craft a useful radio button group component, it is also necessary to consider what _not_ to do. If any Ember addon is evaluated for use, it is not only the Ember code itself that needs to be evaluated, but the output to the browser itself that should be evaluated. 
+When considering how to craft a useful radio button group component, it is also necessary to consider what _not_ to do. If any Ember addon is evaluated for use, it is not only the Ember code itself that needs to be evaluated, but the output to the browser itself that should be evaluated.
 
-### Anti-pattern \#1: divs and spans
+## Anti-pattern \#1: divs and spans
 
 Consider this markup:
 
@@ -30,23 +30,21 @@ Consider this markup:
 </div>
 ```
 
-This should be considered unacceptable for the following reasons: 
+This should be considered unacceptable for the following reasons:
 
 1. there is no `<label>` element associated with the `<input>` element
 2. the radio buttons are not associated as a group with the use of the `name` attribute.
 
-### Anti-pattern \#2 - label first
+## Anti-pattern \#2 - label first
 
-Consider this markup: 
+Consider this markup:
 
 ```markup
 <label for="radio_true">True</label>
 <input id="radio_true" name="question_001" value="true" />
 ```
 
-This would put the label first, and the radio button second. This should be considered an anti-pattern because it is not placing the radio button where the user has been trained to expect it, i.e., to the left of the  label. 
-
-
+This would put the label first, and the radio button second. This should be considered an anti-pattern because it is not placing the radio button where the user has been trained to expect it, i.e., to the left of the label.
 
 {% hint style="info" %}
 Have an anti-pattern to submit? Open an issue \(and include the sample code\) on this project's [GitHub repository](https://github.com/MelSumner/ember-component-patterns).
