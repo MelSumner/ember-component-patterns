@@ -15,7 +15,7 @@ Users expect the following to be true:
 
 ### Part One: Considering Markup
 
-Sometimes, a single checkbox is desirable. In these cases, a checkbox input only requires an associated label input: 
+Sometimes, a single checkbox is desirable. In these cases, a checkbox input only requires an associated label for the input: 
 
 ```markup
 <div class="form-group">
@@ -24,7 +24,7 @@ Sometimes, a single checkbox is desirable. In these cases, a checkbox input only
 </div>
 ```
 
-If the user should be able to select more than one option, a checkbox group should be used. To ensure that all of the checkboxes are associated with the single group, the `name` attribute value should be the same: 
+If the user should be able to select more than one option, a checkbox group should be used. To ensure that all of the checkboxes are associated with the single group, the `name` attribute value should be the same, and the checkbox group should be wrapped with the `<fieldset>` element: 
 
 ```markup
 <fieldset>
@@ -87,9 +87,9 @@ If the user should be able to select more than one option, a checkbox group shou
   </tbody>
 </table>### Part Two: Creating the Ember Component
 
-Ember has a checkbox input helper-  [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. 
+Ember has a checkbox input helper-  [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. Use this helper if it is sensible to do so. 
 
-
+\(More explicit guidance and additional scenarios coming soon\)
 
 ### Part Three: Abstracting for reuse
 
