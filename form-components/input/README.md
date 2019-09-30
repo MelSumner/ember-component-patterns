@@ -6,7 +6,9 @@ It seems as though most of the practical web is all about input fields. To creat
 
 ### Part One: Considering Markup
 
-_**First and foremost:**_ These samples have been simplified to focus on accessibility. Simply copying and pasting these code samples will not produce a complete result. 
+{% hint style="danger" %}
+The examples in this section have been truncated to focus on accessibility. Simply copying and pasting these code samples will not produce a _complete_ result- some necessary attributes will have been left out. 
+{% endhint %}
 
 #### Specification Considerations
 
