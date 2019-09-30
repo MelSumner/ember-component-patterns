@@ -12,7 +12,8 @@ The component patterns here will, at least initially, be without CSS styling. Th
 
 As this project matures, the [anti-patterns](https://en.wikipedia.org/wiki/Anti-pattern) will be explored by adding more prose and explains to demonstrate why other options were not chosen, providing both a well-lit path for success and a knowledge base for the shadows.
 
-What one can obtain from this collection of patterns depends on the reader; however a few potential types of readers, and possible goals, have been kept in mind. Some examples:  
+What one can obtain from this collection of patterns depends on the reader; however a few potential types of readers, and possible goals, have been kept in mind. Some examples:
+
 
 ### For Developers
 
