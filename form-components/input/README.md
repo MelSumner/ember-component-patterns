@@ -51,7 +51,8 @@ Warning: client-side validation should _never_ be considered an appropriate subs
 {% endhint %}
 
 `required`   
-The presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute is required. Removing the attribute will indicate that it is not required. Example: 
+The presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute itself is necessary. To indicate that it is not necessary, remove the attribute completely.   
+Example: 
 
 ```markup
 <label for="firstName-input">First Name</label>

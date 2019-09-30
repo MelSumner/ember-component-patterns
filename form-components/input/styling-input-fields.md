@@ -4,7 +4,7 @@
 
 This is the most common need for `<label>` elements- how to make it available to other machines \(such as screen readers\) but visually hidden for design purposes. While it should be noted that a label helps to provide clarity for all users, there are some ways to make this happen. 
 
-The most popular approach comes from Bootstrap, and uses .sr-only \(screen-reader only\) and .sr-only-focusable \(screen-reader only, focusable elements\). 
+The most common approach was popularized by markup frameworks like [Bootstrap](https://getbootstrap.com/), and uses .sr-only \(screen-reader only\) and .sr-only-focusable \(screen-reader only, focusable elements\). 
 
 `.sr-only`  
 Content which should be visually hidden, but remain accessible to assistive technologies such as screen readers, can be styled using classes such as the popular `.sr-only` class. This can be useful in situations where additional visual information or cues \(such as meaning denoted through the use of color\) need to also be conveyed to non-visual users.
