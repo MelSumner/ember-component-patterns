@@ -19,7 +19,7 @@ Code example:
 
 This should be considered unacceptable for the following reasons: 
 
-* there is no machine-readable way to determine that it is a button
+* there is no machine-readable \(i.e., via assistive technology\) way to determine that it is a button
 * a [div is not an interactive element w/o an associated role](https://www.w3.org/WAI/WCAG21/Techniques/failures/F59)
 * non-interactive elements should not have interactions associated with them
 * there is no way to keyboard navigate to this element
