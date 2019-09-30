@@ -8,7 +8,7 @@ As a general rule, the `<select>` element should be used \(instead of radio butt
 2. there are a large number of _familiar_ options available \(there is no need to be able to compare the options\)
 3. the default choice is the recommended choice
 
-It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those use cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, additional components should be created that serve more complex use cases. 
+It is a common misconception that the select element is not enough for web development. While there are  some constraints on styling, the select element serves a specific purpose and should be used in those  cases. It is ill-advised to disregard the select component entirely simply because it does not support more complex use cases out of the box. Instead, additional components should be created for complex functionality. 
 
 ### Part One: Considering Markup
 
@@ -58,7 +58,7 @@ If grouping is desired, the `<optgroup>` markup can be used:
 </div>
 ```
 
-While multiple selections can be allowed through the use of the `multiple` attribute, and most browsers will show a scrolling list box instead of a single line dropdown. It should be noted, however, that use of the `multiple` attribute is not generally advised, as it can be a confusing interface for users. 
+While multiple selections can be allowed through the use of the `multiple` attribute -- most browsers will show a scrolling list box instead of a single line dropdown -- it should be noted that use of the `multiple` attribute is not generally advised, as it can be a confusing interface for users. 
 
 ### Part Two: Creating the Ember Component
 
@@ -93,9 +93,9 @@ Becomes this component template:
 
 ```markup
 <div class="form-select">
-  <label for={{this.selectId}}>{{@selectLabelText}}</label>
-  <select id={{this.selectId}} name={{@selectName}}>
-    {{#each selectOptions as |selectOption|}}
+  <label for={{this.selectId}}>{{this.selectLabelText}}</label>
+  <select id={{this.selectId}} name={{this.selectName}}>
+    {{#each this.selectOptions as |selectOption|}}
       <option value={{selectOption}}>{{selectOption}}</option>
     {{/each}}
   </select>
@@ -111,13 +111,15 @@ import { guidFor } from '@ember/object/internals';
 export default class InputSelectComponent extends Component {
   selectId = 'select-' + guidFor(this); 
   selectedOptions = ['optionOne', 'optionTwo', 'optionThree'];
+  selectLabelText = 'Option List';
+  selectName = 'optionList';
 }
 ```
 
 Then, the component can be used in the view or page template: 
 
 ```markup
-<InputSelect @selectLabelText="Option List" @selectName="optionList" />
+<InputSelect />
 ```
 
 #### Considering Attributes
@@ -126,7 +128,41 @@ Any form input planning should include considerations for which attributes shoul
 
 ### Part Three: Abstracting for Reuse
 
-coming soon!
+To create something more flexible, allow for definition upon invocation: 
+
+#### Template 
+
+```markup
+<div class="form-select">
+  <label for={{this.selectId}}>{{@selectLabelText}}</label>
+  <select id={{this.selectId}} name={{@selectName}}>
+    {{#each @selectOptions as |selectOption|}}
+      <option value={{selectOption}}>{{selectOption}}</option>
+    {{/each}}
+  </select>
+</div>
+```
+
+#### Component
+
+```javascript
+import Component from '@glimmer/component';
+import { guidFor } from '@ember/object/internals';
+
+export default class InputSelectComponent extends Component {
+  selectId = 'select-' + guidFor(this); 
+}
+```
+
+#### Invocation
+
+```markup
+<InputSelect
+  @selectedLabelText="Option List Label Text"
+  @selectedName="optionList"
+  @selectedOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
+/>
+```
 
 ### References
 

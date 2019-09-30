@@ -1,17 +1,19 @@
----
-description: This is for generating a text field input element.
----
-
 # Text Fields
 
 ### Introduction
 
-* An input field must have associated `<label>` element. To do this, add the `for` attribute to the`<label>` element. The value of the `for` attribute must be the same as the value for the `<input>` element's `id` attribute value. 
-* When the input field fails to validate, an associated error message should be shown. To do this, add the `aria-describedby` attribute to the `<input>` element. The value of the `aria-describedby` attribute must be the same as the value for the `id` of the element that shows the error message \(typically a `<span>` element\). 
+It seems as though most of the practical web is all about input fields. To create a form is simple, some might say; but to create it well requires a depth of knowledge about many different areas of this thing we call web design and development. 
 
 ### Part One: Considering Markup
 
-_**First and foremost:**_ These samples have been simplified to focus on accessibility. Simply copying and pasting these code samples will not produce a complete result. 
+{% hint style="danger" %}
+The examples in this section have been truncated to focus on accessibility. Simply copying and pasting these code samples will not produce a _complete_ result- some necessary attributes will have been left out. 
+{% endhint %}
+
+#### Specification Considerations
+
+* An input field must have associated `<label>` element. To do this, add the `for` attribute to the`<label>` element. The value of the `for` attribute must be the same as the value for the `<input>` element's `id` attribute value. 
+* When the input field fails to validate, an associated error message should be shown. To do this, add the `aria-describedby` attribute to the `<input>` element. The value of the `aria-describedby` attribute must be the same as the value for the `id` of the element that shows the error message \(typically a `<span>` element\). 
 
 #### Input Types
 
@@ -49,7 +51,8 @@ Warning: client-side validation should _never_ be considered an appropriate subs
 {% endhint %}
 
 `required`   
-The presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute is required. Removing the attribute will indicate that it is not required. Example: 
+The presence of the `required` attribute will indicate that the input must be filled out by the user. It should be noted that only the attribute itself is necessary. To indicate that it is not necessary, remove the attribute completely.   
+Example: 
 
 ```markup
 <label for="firstName-input">First Name</label>

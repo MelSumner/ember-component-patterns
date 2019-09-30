@@ -1,4 +1,11 @@
-# Antipatterns: Buttons
+---
+description: >-
+  Anti-patterns produce outcomes that are ineffective because they are not
+  complete solutions, and as such are counterproductive. Developers are advised
+  to be aware of anti-patterns and avoid their use.
+---
+
+# Anti-patterns: Buttons
 
 ### Anti-pattern \#1: The div as a button
 
@@ -12,11 +19,13 @@ Code example:
 
 This should be considered unacceptable for the following reasons: 
 
-* there is no way for a machine to determine that it is a button
-* a div is not an interactive element 
+* there is no machine-readable \(i.e., via assistive technology\) way to determine that it is a button
+* a [div is not an interactive element w/o an associated role](https://www.w3.org/WAI/WCAG21/Techniques/failures/F59)
 * non-interactive elements should not have interactions associated with them
 * there is no way to keyboard navigate to this element
 * there is no way to interact with this element using a keyboard
+
+This pattern also causes the [Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML without providing a role for the control](https://www.w3.org/WAI/WCAG21/Techniques/failures/F59).
 
 ### Anti-pattern \#2: The "Almost" button
 

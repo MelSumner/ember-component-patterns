@@ -70,7 +70,7 @@ Assistive technology interprets the existence of the `aria-pressed` attribute as
 
 #### Buttons in forms
 
-While using `<input type="submit">` is still technically valid HTML, it is also an _outdated_ approach, and it is recommended to avoid use. Additionally, `<button>` elements are considerably easier to style than `<input>` elements. 
+While using `<input type="submit">` \(or `type="button"`, or `type="reset"`\) is still technically valid HTML, it is also an _outdated_ approach, and it is recommended to avoid use. Additionally, `<button>` elements are considerably easier to style than `<input>` elements. 
 
 When inside of the `<form>` element, setting the button `type` attribute can indicate intent. If there is only one button in the `<form>` element, the button will be treated as though `type="submit"` were declared. However, explicit declaration of type is typically preferred when components are abstracted for use in many places. 
 
@@ -96,13 +96,12 @@ Generate the generic button component:
 ember generate component button-generic -gc
 ```
 
-The appropriate markup can then be added to the `button-generic.hbs` file. Note that because button classes will so often need extra classes for styling,  `...attributes` should be added to allow a bit more flexibility when using the component, as it is practical.
+The appropriate markup can then be added to the `button-generic.hbs` file
 
 ```markup
 <button 
   {{on "click" this.handleInteraction}}
   class="button"
-  ...attributes
 >
 {{@accessibleName}}
 </button>
@@ -129,7 +128,9 @@ The component can then be added to the page template:
 />
 ```
 
+### Part Three: Abstracting for Reuse
 
+Coming Soon! 
 
 ### References
 

@@ -64,7 +64,7 @@ This is all that is needed.
 
 If extra styling on the radio button is desired, the [pseudo elements in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements), rather than extra markup in the DOM, should be used. To see examples of how this could be done, visit the [Styling: Radio Buttons page](styling-radio-buttons.md). 
 
-Of course, there are more options that will need to be build into this pattern, so consideration for those should be planned for next, as it is preferred to plan out the component before building it.
+Of course, there are more options that will need to be build into this pattern, so consideration for those should be planned for next, as it is advised to plan out the component before building it.
 
 #### Considering Attributes & Properties
 

@@ -123,8 +123,6 @@ export default class TypeaheadComponent extends Component {
 }
 ```
 
-//TODO the results list is returning the same ID so need to increment instead of just returning the guid. 
-
 //TODO add keyboard support
 
 #### Using the Component

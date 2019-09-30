@@ -24,7 +24,7 @@ Regions that contain warning notifications that users _may_ need to know can be 
 
 Regions that contain urgent alerts or notifications \(such as error alerts\) that are imperative for users to know immediately should use `aria-live=assertive`. 
 
-### Be aware of pitfalls
+### Pitfalls
 
 The aria-live attribute should not be used for dynamic content that is non-critical. Of course, what constitutes critical should be driven only by determining if the content is important to the specific purpose of the page. 
 
