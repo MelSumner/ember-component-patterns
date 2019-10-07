@@ -51,6 +51,17 @@ There are four forms of autocomplete that are acceptable:
 
 The keyboard interactions are important here, because there is definitely the risk of introducing serious keyboard navigation flaws -- the focus could escape the listbox and continue down the page, or conversely, the focus could get trapped inside of the listbox and never allow the user to escape out of the list. 
 
+#### Conditions for Dropdown
+
+The dropdown is hidden by default; as the conditions that should trigger it are specific to the application and use cases, consider possible methods but don't forget to remain consistent with other user experiences across the application.  
+
+Here are some possible display conditions:
+
+* It is displayed only if a certain number of characters are typed in the textbox and those characters match some portion of one of the suggested values.
+* It is displayed as soon as the textbox is focused, even if the textbox is empty.
+* It is displayed when the Down Arrow key is pressed or the show button is activated, possibly with a dependency on the content of the textbox.
+* It is displayed if the value of the textbox is altered in a way that creates one or more partial matches to a suggested value.
+
 ### Part Two: Creating the Ember Component
 
 #### Generate the component
