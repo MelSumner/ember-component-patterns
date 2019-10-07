@@ -93,6 +93,8 @@ It is an elevated experience for users with assistive technology to include this
 <input id="camping-preference" type="text" name="campingPreference" autocomplete="false" />
 ```
 
+For a complete list of valid values for the `autocomplete` attribute, visit [https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete\#Values](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#Values).
+
 `pattern`   
 Setting the pattern attribute value will provide client-side form validation for the user. The `pattern` attribute expects a Regular Expression as its value. Example:
 
