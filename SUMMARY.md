@@ -40,6 +40,7 @@
 
 * [Modal](messaging/modals.md)
 * [Alerts](messaging/alerts.md)
+* [Tooltips](messaging/tooltips.md)
 
 ## Complex Components
 
