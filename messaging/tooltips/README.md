@@ -20,11 +20,40 @@ The standard tooltip will appear when the user hovers over the element, or tabs 
 
 For this example, a tooltip will be attached to a button element: 
 
-```text
-
+```markup
+<div class="wrapper-tooltip">
+	<button aria-describedby="tooltip">I have a tooltip</button>
+	<div id="tooltip" role="tooltip">Tooltips provide additional context or additional help text for the user.</div>
+</div>
 ```
 
+A little CSS will help this work:
 
+```css
+.wrapper-tooltip {
+  position: relative;
+}
+
+[role="tooltip"] {
+	background-color: #2d2d2d;
+	border-radius: 6px;
+	color: white;
+	display: none;
+	margin-top: 0.2em;
+	padding: 0.5em;
+  position: absolute;
+	width: 300px;
+}
+
+button:hover + [role="tooltip"],  
+button:focus + [role="tooltip"] {  
+  display: block;
+}
+```
+
+![The basic rendered tooltip is displayed when the button has hover or focus](../../.gitbook/assets/image%20%2811%29.png)
+
+This is a very basic pattern; there is more to consider if additional positioning is desired. 
 
 #### Tooltips For Input Fields
 
