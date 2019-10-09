@@ -180,6 +180,8 @@ The component can then be added to the page template:
 />
 ```
 
+For other ways to manage the `id` attribute for label use, see the [text fields](../input/) page. 
+
 ### Part Three: Abstractions for reuse
 
 Coming Soon
