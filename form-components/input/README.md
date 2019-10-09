@@ -79,7 +79,7 @@ The presence of the `readonly` attribute will allow the user to view the current
 <input type="text" id="firstName-input" name="firstName" value="Zoey" readonly />
 ```
 
-![An input field with a default value, marked as readonly](../../.gitbook/assets/image%20%285%29.png)
+![An input field with a default value, marked as readonly](../../.gitbook/assets/image%20%286%29.png)
 
 It should be noted that browsers will apply default styles to input fields marked as `readonly`; however this can be overridden with custom CSS if desired.
 
@@ -122,7 +122,7 @@ Sometimes it is useful to show the user what kind of formatting is expected. In 
 <input id="firstName-input" type="text" name="firstName" placeholder="Zoey McEmber" />
 ```
 
-![An input field with placeholder content](../../.gitbook/assets/image%20%286%29.png)
+![An input field with placeholder content](../../.gitbook/assets/image%20%287%29.png)
 
 {% hint style="danger" %}
 Warning! It is not acceptable to use a `placeholder` instead of an associated `<label>` element. Machine-readable code requires a `<label>` element to be associated with each input field. See the styling sub-section for ideas on styling.
