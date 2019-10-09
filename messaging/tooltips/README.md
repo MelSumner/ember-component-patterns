@@ -81,7 +81,9 @@ input:focus + [role="tooltip"] {
 
 #### Tooltips on Interaction
 
-                                                                                                                                                                                                                                                                                                                                          
+ Tooltips that are touch-screen friendly will act more like a toggle than a traditional tooltip. 
+
+//TODO include pattern                                                                                                                                                                                                                                                                                                                                         
 
 
 
