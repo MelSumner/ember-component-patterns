@@ -2,6 +2,8 @@
 
 The \#1 issue for any modal is lack of focus trapping. No matter what approach authors decide to take, authors must ensure that focus is contained to the modal when the modal is open. This means that when the user navigates with a keyboard \(TAB key, for example\) or a mouse, they are not able to navigate to any content outside of the modal window.
 
+Read more about understanding focus as it relates to screen readers: [https://codepen.io/melsumner/live/ZJeYoP](https://codepen.io/melsumner/live/ZJeYoP)
+
 ### Requirements
 
 All modals must support the following: 
