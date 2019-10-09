@@ -16,6 +16,8 @@ This guide will cover traditional tooltips and two variations- tooltips for inpu
 
 #### Traditional Tooltips
 
+The standard tooltip will appear when the user hovers over the element, or tabs to the interactive element and brings it into focus. Moving the mouse away from the element, or pressing the `ESC` key should both close the tooltip. 
+
 
 
 #### Tooltips For Input Fields
@@ -44,7 +46,7 @@ input:focus + [role="tooltip"] {
 
 #### Tooltips on Interaction
 
-
+                                                                                                                                                                                                                                                                                                                                          
 
 
 
