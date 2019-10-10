@@ -53,7 +53,11 @@ button:focus + [role="tooltip"] {
 
 ![The basic rendered tooltip is displayed when the button has hover or focus](../../.gitbook/assets/image%20%2811%29.png)
 
-This is a very basic pattern; there is more to consider if additional positioning is desired. 
+This is a very basic pattern; there is more to consider if additional positioning is desired. JavaScript will need to be used to provide the ability to dismiss the tooltip with the `ESC` key:
+
+```text
+//TODO
+```
 
 #### Tooltips For Input Fields
 
