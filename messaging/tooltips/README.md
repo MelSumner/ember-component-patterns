@@ -95,7 +95,7 @@ input:focus + [role="tooltip"] {
 
 ### Part Two: Ember Component
 
-coming soon
+coming soon!
 
 ### Part Three: Abstracting for Reuse
 
