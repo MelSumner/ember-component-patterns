@@ -11,6 +11,7 @@
 ## Global Components
 
 * [Buttons](global-components/buttons/README.md)
+  * [Testing](global-components/buttons/testing.md)
   * [Anti-patterns: Buttons](global-components/buttons/antipatterns-buttons.md)
 * [Images](global-components/images.md)
 
