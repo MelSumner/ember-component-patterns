@@ -7,6 +7,7 @@
 
 * [Considering Forms](general-considerations/considering-forms.md)
 * [Use of aria-live](general-considerations/use-of-aria-live.md)
+* [Tips and Tricks](general-considerations/tips-and-tricks.md)
 
 ## Global Components
 
