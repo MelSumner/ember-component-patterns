@@ -224,7 +224,7 @@ Updated app/components/input-text.hbs to include these attributes:
     type="text" 
     disabled={{@isDisabled}}
     required={{@isRequired}}
-    readonly={{@isReadonly}}
+    readOnly={{@isReadonly}}
   />
 </div>
 ```
