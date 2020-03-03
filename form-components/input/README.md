@@ -262,7 +262,9 @@ On the other hand, some teams may find it more useful to have a "kitchen sink" s
 
 ### Part Three: Abstractions for Reuse
 
-coming soon!
+When creating something like a UI addon that will be used in several apps in your organization \(or made available to the public\), some level of abstraction can be useful to ensure that components are reusable and resilient. 
+
+What that abstraction looks like can vary from project to project; no abstraction will be perfect. One of the ways that Ember helps to support flexible abstractions is with the use of `...attributes`. Read more about the use of `...attributes` on the official guides: [https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\#toc\_html-attributes](https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/#toc_html-attributes).
 
 ### References
 
