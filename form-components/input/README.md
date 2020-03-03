@@ -2,7 +2,7 @@
 
 ### Introduction
 
-It seems as though most of the practical web is all about input fields. To create a form is simple, some might say; but to create it well requires a depth of knowledge about many different areas of this thing we call web design and development. 
+It seems as though most of the practical web is all about input fields. To create a form is simple, some might say; but to create it _well_ requires a depth of knowledge about many different areas of this thing we call web design and development. 
 
 ### Part One: Considering Markup
 
