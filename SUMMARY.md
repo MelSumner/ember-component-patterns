@@ -21,7 +21,7 @@
 * [Checkboxes](form-components/checkboxes/README.md)
   * [Anti-patterns: Checkboxes](form-components/checkboxes/anti-patterns-checkboxes.md)
   * [Styling: Checkboxes](form-components/checkboxes/styling-checkboxes.md)
-* [Text Fields](form-components/input/README.md)
+* [Input Fields](form-components/input/README.md)
   * [Anti-patterns: Text Fields](form-components/input/antipatterns-text-fields.md)
   * [Styling: Text Fields](form-components/input/styling-input-fields.md)
 * [Radio Buttons](form-components/radio-buttons/README.md)
