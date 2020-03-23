@@ -55,12 +55,16 @@ A little CSS will help this work- note that your exact dimensions may vary.
 }
 
 .tooltip-content {
-  background-color: #fff;
+  background-color: #2d2d2d;
+  border-radius: 3px;
   border: 1px solid black;
+  color: white;
   left: 0;
   opacity: 0;
   padding: 0.25em;
+  position: absolute;
   top: 20px;
+  z-index: 1;
 }
 
 .tooltip-trigger:hover + .tooltip-content,
