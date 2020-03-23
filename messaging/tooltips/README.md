@@ -98,8 +98,15 @@ ember generate component tooltip -gc
 
 ```markup
 <div class="tooltip">
-  <a href="#{{this.tooltipId}}" class="tooltip-trigger" aria-describedby={{this.tooltipTextId}}>{{@textWithTooltip}}</a>
-  <div id="{{this.tooltipTextId}}" class="visually-hidden tooltip-content" role="tooltip" tabindex="-1">
+  <a href="#{{this.tooltipId}}" 
+     class="tooltip-trigger" 
+     aria-describedby={{this.tooltipTextId}}>
+    {{@textWithTooltip}}
+  </a>
+  <div id="{{this.tooltipTextId}}" 
+       class="visually-hidden tooltip-content" 
+       role="tooltip" 
+       tabindex="-1">
     {{@tooltipText}}
   </div>
 </div>
