@@ -1,3 +1,9 @@
+---
+description: >-
+  Tooltips should provide extra information to the user, and shown only when the
+  item has focus. They should not contain interactive elements.
+---
+
 # Tooltips
 
 ### Introduction
@@ -116,12 +122,5 @@ Then, we can use the component in our template:
 />
 ```
 
-
-
-
-
-### References
-
-1. [Accessible Input Tooltips](http://heydonworks.com/practical_aria_examples/#input-tooltip) by Heydon
-2. [ARIA Tooltip](http://pauljadam.com/demos/tooltip.html) by Paul Adam
+This will help you implement a simple tooltip in your app. If additional functionality is needed, it is likely that a different kind of tooltip, known colloquially as a toggletip, may be desired.
 
