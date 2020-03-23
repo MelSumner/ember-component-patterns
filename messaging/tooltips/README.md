@@ -16,94 +16,112 @@ This guide will cover traditional tooltips and two variations- tooltips for inpu
 
 #### Traditional Tooltips
 
-The standard tooltip will appear when the user hovers over the element, or tabs to the interactive element and brings it into focus. Moving the mouse away from the element, or pressing the `ESC` key should both close the tooltip. 
+The standard tooltip will appear when the user hovers over the element, or tabs to the interactive element and brings it into focus. Moving the mouse away from the element should both close the tooltip. 
 
 For this example, a tooltip will be attached to a button element: 
 
 ```markup
-<div class="wrapper-tooltip">
-	<button aria-describedby="tooltip">I have a tooltip</button>
-	<div id="tooltip" role="tooltip">Tooltips provide additional context or additional help text for the user.</div>
+<div class="tooltip">
+  <a href="#tooltip" class="tooltip-trigger" aria-describedby="tooltipText">
+    I have a tooltip
+  </a>
+  <div id="tooltipText" class="visually-hidden tooltip-content" role="tooltip" tabindex="-1">
+    Tooltips provide additional context or additional help text for the user.
+  </div>
 </div>
 ```
 
-A little CSS will help this work:
+A little CSS will help this work- note that your exact dimensions may vary.
 
 ```css
-.wrapper-tooltip {
-  position: relative;
-}
-
-[role="tooltip"] {
-	background-color: #2d2d2d;
-	border-radius: 6px;
-	color: white;
-	display: none;
-	margin-top: 0.2em;
-	padding: 0.5em;
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  overflow: hidden;
   position: absolute;
-	width: 300px;
+  white-space: nowrap;
+  width: 1px;
 }
 
-button:hover + [role="tooltip"],  
-button:focus + [role="tooltip"] {  
-  display: block;
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  background-color: #fff;
+  border: 1px solid black;
+  left: 0;
+  opacity: 0;
+  padding: 0.25em;
+  top: 20px;
+}
+
+.tooltip-trigger:hover + .tooltip-content,
+.tooltip-trigger:focus + .tooltip-content,
+.tooltip-content:hover,
+.tooltip-content:focus {
+  clip: auto;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  white-space: normal;
+  width: 200px;
 }
 ```
 
 ![The basic rendered tooltip is displayed when the button has hover or focus](../../.gitbook/assets/image%20%2811%29.png)
 
-This is a very basic pattern; there is more to consider if additional positioning is desired. JavaScript will need to be used to provide the ability to dismiss the tooltip with the `ESC` key:
+This is a very basic pattern; there is more to consider if additional positioning is desired. 
 
-```text
-//TODO
+### Part Two: Ember Component \(for reuse\)
+
+To turn this into an Ember Component that we can reuse throughout our app, we'll generate a component with a class file, and then add the template markup to the `.hbs` file and some auto-generated `id` attributes to the component's `.js` file, so that elements are associated appropriately for assistive technology.
+
+#### generate tooltip component 
+
+```bash
+ember generate component tooltip -gc
 ```
 
-#### Tooltips For Input Fields
-
-It is possible to provide an accessible tooltip in an input field- without any JavaScript. By using the `aria-describedby` attribute and the appropriate CSS, the helpful hint can be made visible once the user has focused the input field. 
-
-The following code would be valid inside of a &lt;form&gt; element:
+#### tooltip.hbs
 
 ```markup
-<div class="form-group">
-  <label for="input-userName">Username</label>
-  <input type="text" id="input-userName" aria-describedby="userName-hint" name="userName" />
-  <div role="tooltip" id="username-hint">Your username or email address is acceptable</div>
-</div> 
+<div class="tooltip">
+  <a href="#{{this.tooltipId}}" class="tooltip-trigger" aria-describedby={{this.tooltipTextId}}>{{@textWithTooltip}}</a>
+  <div id="{{this.tooltipTextId}}" class="visually-hidden tooltip-content" role="tooltip" tabindex="-1">
+    {{@tooltipText}}
+  </div>
+</div>
 ```
 
-By setting the `div[role="tooltip"]` \(or adding an explicit class to the element for this purpose\) to `display: none;`, the tooltip can then be revealed with a bit of additional CSS: 
+#### tooltip.js
 
-```css
-input:focus + [role="tooltip"] {
-  display: block;
-  position: absolute;
-  top: 100%;
+```javascript
+import Component from '@glimmer/component';
+import { guidFor } from '@ember/object/internals';
+
+export default class TooltipComponent extends Component {
+  tooltipId = 'tooltip-' + guidFor(this); 
+  tooltipTextId = 'tooltipText-' + guidFor(this);
 }
 ```
 
-#### Tooltips on Interaction
+Then, we can use the component in our template:
 
- Tooltips that are touch-screen friendly will act more like a toggle than a traditional tooltip. 
+```markup
+<Tooltip 
+  @textWithTooltip="I have a tooltip" 
+  @tooltipText="Tooltips can provide additional context for the user." 
+/>
+```
 
-//TODO include pattern                                                                                                                                                                                                                                                                                                                                         
 
 
 
-
-
-### Part Two: Ember Component
-
-coming soon!
-
-### Part Three: Abstracting for Reuse
-
-coming soon!
 
 ### References
 
 1. [Accessible Input Tooltips](http://heydonworks.com/practical_aria_examples/#input-tooltip) by Heydon
-2. [Building Accessible Tooltips](https://www.sarasoueidan.com/blog/accessible-tooltips/) by Sara Soueidan
-3. [ARIA Tooltip](http://pauljadam.com/demos/tooltip.html) by Paul Adam
+2. [ARIA Tooltip](http://pauljadam.com/demos/tooltip.html) by Paul Adam
 
