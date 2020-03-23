@@ -80,7 +80,7 @@ A little CSS will help this work- note that your exact dimensions may vary.
 }
 ```
 
-![The basic rendered tooltip is displayed when the button has hover or focus](../../.gitbook/assets/image%20%2811%29.png)
+![The basic rendered tooltip is displayed when the element has hover or focus](../../.gitbook/assets/image%20%2811%29.png)
 
 This is a very basic pattern; there is more to consider if additional positioning is desired. 
 
