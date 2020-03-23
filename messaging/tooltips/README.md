@@ -1,7 +1,7 @@
 ---
 description: >-
-  Tooltips should provide extra information to the user, and shown only when the
-  item has focus. They should not contain interactive elements.
+  Tooltips should provide contextual help for the user, and should be shown only
+  when the item has focus. They should not contain interactive elements.
 ---
 
 # Tooltips
