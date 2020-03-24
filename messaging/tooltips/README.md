@@ -84,6 +84,10 @@ A little CSS will help this work- note that your exact dimensions may vary.
 
 This is a very basic pattern; there is more to consider if additional positioning is desired. 
 
+{% hint style="info" %}
+Note: a tooltip is dismissed on a mobile device without any additional code. On an iOS device, swiping left on the tooltip text will dismiss it. On an Android device, tapping anywhere else on the screen will dismiss the tooltip.
+{% endhint %}
+
 ### Part Two: Ember Component \(for reuse\)
 
 To turn this into an Ember Component that we can reuse throughout our app, we'll generate a component with a class file, and then add the template markup to the `.hbs` file and some auto-generated `id` attributes to the component's `.js` file, so that elements are associated appropriately for assistive technology.
@@ -134,4 +138,6 @@ Then, we can use the component in our template:
 ```
 
 This will help you implement a simple tooltip in your app. If additional functionality is needed, it is likely that a different kind of tooltip, known colloquially as a toggletip, may be desired.
+
+
 
