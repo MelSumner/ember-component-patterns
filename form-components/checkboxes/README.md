@@ -85,7 +85,9 @@ If the user should be able to select more than one option, a checkbox group shou
       </td>
     </tr>
   </tbody>
-</table>### Part Two: Creating the Ember Component
+</table>
+
+### Part Two: Creating the Ember Component
 
 Ember has a checkbox input helper-  [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. Use this helper if it is sensible to do so. 
 

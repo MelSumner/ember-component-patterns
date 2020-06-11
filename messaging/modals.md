@@ -61,7 +61,9 @@ All modals must support the following:
       </td>
     </tr>
   </tbody>
-</table>### Focus-Trapping Approaches
+</table>
+
+### Focus-Trapping Approaches
 
 There are some common approaches used to provide focus-trapping in modals. When building a modal, choose one of these \(both have tradeoffs\):
 

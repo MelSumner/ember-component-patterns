@@ -22,6 +22,12 @@ If there will be more than one `<nav>` element on a page, then each `<nav>` elem
 
 The primary navbar should be consistent across the entire site- meaning, the links presented in the navbar should not change when the user visits different pages.
 
+{% hint style="info" %}
+Why put a list element inside of the `<nav>` element?   
+  
+The `<nav>` element informs screen reader users that they are in a part of the page that relates to navigation and provides a "landmark" for them to be able to navigate to with a shortcut. The list inside the `<nav>` informs screen reader users that there is a "list of N items" where N is the number of `<li>`elements inside the ol/ul, and this helps screen reader users judge the size of the navigation block and from there to decide on their strategy for navigating through it, over it, or something else.
+{% endhint %}
+
 //TODO adding toggle for mobile nav support
 
 ### Keyboard Support
