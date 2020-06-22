@@ -12,14 +12,14 @@ It is a combination of a single line input field with a popup, typically a listb
 
 Because this field is editable and is typically used for autocomplete behavior \(to help the user find things more quickly\), the `aria-autocomplete` attribute should be used. 
 
-There are four forms of autocomplete that are acceptable: 
+There are a few forms of autocomplete that have historically been considered acceptable: 
 
 1. **no autocomplete**: the suggested values that appear are the same, no matter what the user has typed in the textbox.  
 2. **list autocomplete with manual selection**: the suggested values that appear contain values that complete or otherwise logically correspond with the characters that the user has typed into the textbox. However, the characters that the user has typed will be the value of the textbox unless the user manually selects a value displayed in the popup. 
 3. **list autocomplete with automatic selection**: the suggested values that appear, contain values that complete \(or otherwise logically correspond with\) the characters that the user has typed into the textbox, and the first suggestion is automatically highlighted as selected. The automatically selected suggestion becomes the value of the textbox when the combobox loses focus, unless the user manually chooses a different suggestion.  
 4. **list with inline autocomplete**: after the user types a certain number of characters, suggestions display inline after the input cursor in the textbox \(known as a completion string\). The suggested completion string should update as the user types additional characters. 
 
-
+However, it should be noted that in [a recent user experience study](https://select-study-epxfpuejic.now.sh/studies/combobox) conducted by Microsoft, they found that a number of people were **confused** by the filtering behavior when it was present. This was particularly notable when spelling mistakes were made that returned no results, and after an option was selected, when all other results would be filtered out. Because of this, **the current recommendation is to avoid filtering** unless there is a particular reason for it, such as a very large set of possible options. For more limited option sets, consider _not_ filtering and only moving focus to the closest matching option. \[[source](https://github.com/microsoft/sonder-ui/tree/master/src/components/combobox#autocomplete-and-filtering)\]
 
 ### Part One: Considering Markup
 
