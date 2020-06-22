@@ -8,7 +8,7 @@ description: WIP
 
 The typeahead or combobox component is usually similar to a textbox where users can type ahead to select an option, or sometimes even type arbitrary text as a new item to add to the list. 
 
-It is a combination of a single line input field with a popup, typically a listbox. 
+It is a combination of a single line input field with a popup, typically a listbox. All of the digital accessibility requirements for form fields apply: [a persistent label](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html), [visible focus state](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html), [perceivable control boundaries](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html), and [adequate text contrast](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
 Because this field is editable and is typically used for autocomplete behavior \(to help the user find things more quickly\), the `aria-autocomplete` attribute should be used. 
 
@@ -152,7 +152,8 @@ coming soon!
 
 ### References
 
-* WAI-ARIA Authoring Practices 1.1 - Combo Box - [https://www.w3.org/TR/wai-aria-practices/\#combobox](https://www.w3.org/TR/wai-aria-practices/#combobox)
+* WAI-ARIA Authoring Practices 1.2 - Combobox - [https://www.w3.org/TR/wai-aria-practices/\#combobox](https://www.w3.org/TR/wai-aria-practices-1.2/#combobox)
+* \_\_[_&lt;select&gt; your poison_](https://www.24a11y.com/2019/select-your-poison/) by Sarah Higley
 
 {% hint style="info" %}
 Feedback is welcome! Visit the [GitHub repository for this project](https://github.com/MelSumner/ember-component-patterns) to raise an issue.
