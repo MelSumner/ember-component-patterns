@@ -60,6 +60,28 @@ If grouping is desired, the `<optgroup>` markup can be used:
 
 While multiple selections can be allowed through the use of the `multiple` attribute -- most browsers will show a scrolling list box instead of a single line dropdown -- it should be noted that use of the `multiple` attribute is not generally advised, as it can be a confusing interface for users. 
 
+But what about when you need something more complex? As a general rule, it is far better to simplify the UX so that a native select can be used. However, there are considerations for when a custom select component is required.
+
+An important part of successfully creating a custom select component is considering the accessibility aspect- how will assistive technology\(AT\) interact with your custom component, and are you providing the correct amount of information so that AT knows how your select was intended? 
+
+At the very least, developers should understand how a native select component is announced, that way steps can be taken to ensure that the custom version delivers the same value. 
+
+####  Using VoiceOver with Safari for Mac
+
+1. on focus, it says the name of the selected option \(if it's not blank\) then the element's label. 
+2. on navigating the option list, each option's name should be announced 
+3. on selected, using VO + `SPACE`, it should announce "press \[option name\]." 
+4. if option is selected using the `ENTER` key instead, it does not say "press \[option name\]."
+5. regardless of how the selection is made, focus should return to the  `<select>` element and it again says the name of the selected option and the element's label. 
+
+#### Using NVDA with Firefox \(Windows\)
+
+1. on focus, it announces these **four** things: label\(name\) + “combobox” + currently selected option + “collapsed” 
+2. on `ARROW` up or down \(without expanding the dropdown\), it says the name of the option that is brought into focus \(but it _does not_ announce the position of the option in the list\) 
+3. on `SPACE` it opens the dropdown and announces these **five** things: “combobox expanded” + currently selected option + “list” + currently selected option + position of option in the list 
+4. while the dropdown is open, navigating through the options with the arrow keys will cause the selected option’s name to be announced as well as its position in the list \(such as “option c, 3 of 3”\)
+5. pressing the `ENTER` key will return focus to the  element and NVDA will announce these **four** things: label\(name\) + “combobox” + option selected + “collapsed” \(note: nothing happened when I used the NVDA + `SPACE` or just `SPACE`\).
+
 ### Part Two: Creating the Ember Component
 
 The component should be generated \(via ember-cli\): 
