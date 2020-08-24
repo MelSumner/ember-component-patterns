@@ -6,8 +6,8 @@
 ## General Considerations
 
 * [Considering Forms](general-considerations/considering-forms.md)
-* [Use of aria-live](general-considerations/use-of-aria-live.md)
 * [Tips and Tricks](general-considerations/tips-and-tricks/README.md)
+  * [Use of aria-live](general-considerations/tips-and-tricks/use-of-aria-live.md)
   * [iFrames and Screen Readers](general-considerations/tips-and-tricks/iframes-and-screen-readers.md)
 
 ## Global Components

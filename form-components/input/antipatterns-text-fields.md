@@ -27,5 +27,5 @@ To avoid surprising the user \(in a not good way\), input fields should only sub
 
 #### Automatically update information in other places
 
-Any page updates should come only as a result of an explicit interaction from the user, and any information on the page that will receive this updated data should be marked with aria-live. See the [aria-live guide](../../general-considerations/use-of-aria-live.md) for information on how to use this attribute. 
+Any page updates should come only as a result of an explicit interaction from the user, and any information on the page that will receive this updated data should be marked with aria-live. See the [aria-live guide](../../general-considerations/tips-and-tricks/use-of-aria-live.md) for information on how to use this attribute. 
 
