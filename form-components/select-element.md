@@ -180,8 +180,8 @@ export default class InputSelectComponent extends Component {
 
 ```markup
 <InputSelect
-  @selectedLabelText="Option List Label Text"
-  @selectedName="optionList"
+  @selectLabelText="Option List Label Text"
+  @selectName="optionList"
   @selectOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
 />
 ```
