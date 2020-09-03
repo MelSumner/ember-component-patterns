@@ -132,7 +132,7 @@ import { guidFor } from '@ember/object/internals';
 
 export default class InputSelectComponent extends Component {
   selectId = 'select-' + guidFor(this); 
-  selectedOptions = ['optionOne', 'optionTwo', 'optionThree'];
+  selectOptions = ['optionOne', 'optionTwo', 'optionThree'];
   selectLabelText = 'Option List';
   selectName = 'optionList';
 }
