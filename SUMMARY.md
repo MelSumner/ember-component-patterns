@@ -7,6 +7,7 @@
 
 * [Considering Forms](general-considerations/considering-forms.md)
 * [Tips and Tricks](general-considerations/tips-and-tricks/README.md)
+  * [Windows High Contrast Mode](general-considerations/tips-and-tricks/windows-high-contrast-mode.md)
   * [Use of aria-live](general-considerations/tips-and-tricks/use-of-aria-live.md)
   * [iFrames and Screen Readers](general-considerations/tips-and-tricks/iframes-and-screen-readers.md)
 
