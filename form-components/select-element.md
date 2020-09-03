@@ -33,7 +33,7 @@ Benefits provided by the semantic html element:
 
 * if a user clicks on the label, the focus will automatically go to the select element
 * keyboard navigation is built in:
-  * the `ENTER` key will toggle the dropdown open/closed
+  * the `SPACEBAR` key will toggle the dropdown open/closed
   * the arrow keys will navigate up and down the list
   * the `ESC` key will close the dropdown
 * assistive technology \(like screen readers\) will already understand what this code is meant to do
