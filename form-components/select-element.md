@@ -148,6 +148,10 @@ Then, the component can be used in the view or page template:
 
 Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. 
 
+{% hint style="info" %}
+Remember: when a form is submitted, information marked as `readonly` **will** be sent to the server upon submit, whereas information marked `disabled` **will not**. 
+{% endhint %}
+
 ### Part Three: Abstracting for Reuse
 
 To create something more flexible, allow for definition upon invocation: 
