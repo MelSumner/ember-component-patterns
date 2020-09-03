@@ -182,7 +182,7 @@ export default class InputSelectComponent extends Component {
 <InputSelect
   @selectedLabelText="Option List Label Text"
   @selectedName="optionList"
-  @selectedOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
+  @selectOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
 />
 ```
 
