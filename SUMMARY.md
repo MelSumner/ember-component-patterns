@@ -42,6 +42,7 @@
 
 ## Messaging
 
+* [Progress Indicators](messaging/progress-indicators.md)
 * [Modal](messaging/modals.md)
 * [Alerts](messaging/alerts.md)
 * [Tooltips](messaging/tooltips/README.md)
