@@ -67,7 +67,9 @@ If the user should be able to select more than one option, a checkbox group shou
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left"><code>SPACE</code>
@@ -88,7 +90,9 @@ If the user should be able to select more than one option, a checkbox group shou
     </tr>
   </thead>
   <tbody></tbody>
-</table>Ember has a checkbox input helper- [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. Use this helper if it is sensible to do so.
+</table>
+
+Ember has a checkbox input helper- [https://guides.emberjs.com/release/templates/input-helpers/\#toc\_checkboxes](https://guides.emberjs.com/release/templates/input-helpers/#toc_checkboxes) - but it should not be used in the place of common sense. Use this helper if it is sensible to do so.
 
 \(More explicit guidance and additional scenarios coming soon\)
 
