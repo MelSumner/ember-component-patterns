@@ -145,8 +145,7 @@ export default class SelectElementComponent extends Component {
   @action
   setSelection(changeEvent) {
     let value = changeEvent.target.value;
-    this.selectElementOption = value;
-    console.log('Selected option is ' + this.selectElementOption);    
+    this.selectElementOption = value;   
   }
 }
 ```
