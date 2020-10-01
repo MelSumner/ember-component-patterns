@@ -91,16 +91,16 @@ At the very least, developers should understand how a native select component is
 The component should be generated \(via ember-cli\): 
 
 ```bash
-ember generate component input-select -gc
+ember generate component select-element -gc
 ```
 
 This will create three files and put them in the correct location: 
 
-* app/components/input-select.hbs
-* app/components/input-select.js
-* tests/integration/components/input-select-test.js
+* app/components/select-element.hbs
+* app/components/select-element.js
+* tests/integration/components/select-element-test.js
 
-In **app/components/input-select.hbs**, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
+In **app/components/select-element.hbs**, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
 
 So this markup: 
 
@@ -130,7 +130,7 @@ Becomes this component template:
 </div> 
 ```
 
-In **app/components/input-select.js**, the select `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
+In **app/components/select-element.js**, the select `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
 
 ```javascript
 import Component from '@glimmer/component';
@@ -157,7 +157,7 @@ export default class SelectElementComponent extends Component {
 Then, the component can be used in the view or page template: 
 
 ```markup
-<InputSelect />
+<SelectElement />
 ```
 
 {% hint style="danger" %}
