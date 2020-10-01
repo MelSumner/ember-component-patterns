@@ -102,11 +102,11 @@ So this markup:
 
 ```markup
 <div class="form-select">
-  <label for="selectId">Label Text</label>
-  <select id="selectId" name="select-name">
-    <option value="option-one">Option One</option>
-    <option value="option-two">Option Two</option>
-    <option value="option-three">Option Three</option>
+  <label for="favoriteCity">Select Your Favorite City</label>
+  <select id="favoriteCity" name="select-favoriteCity">
+    <option value="Austin">Austin</option>
+    <option value="Boston">Boston</option>
+    <option value="Chicago">Chicago</option>
   </select>
 </div>
 ```
@@ -116,12 +116,14 @@ Becomes this component template:
 ```markup
 <div class="form-select">
   <label for={{this.selectId}}>{{this.selectLabelText}}</label>
-  <select id={{this.selectId}} name={{this.selectName}}>
-    {{#each this.selectOptions as |selectOption|}}
-      <option value={{selectOption}}>{{selectOption}}</option>
-    {{/each}}
-  </select>
-</div>
+  {{#let (array 'Austin' 'Boston' 'Chicago') as |selectElementOptions|}}
+    <select id={{this.selectId}} name={{this.selectName}} {{on "change" this.setSelection}}>
+      {{#each selectElementOptions as |selectElementOption|}}
+        <option value={{selectElementOption}} selected={{eq this.selectElementOption selectElementOption}}>{{selectElementOption}}</option>
+      {{/each}}
+    </select>
+  {{/let}}
+</div> 
 ```
 
 In **app/components/input-select.js**, the select `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
@@ -129,12 +131,23 @@ In **app/components/input-select.js**, the select `id` will need to be generated
 ```javascript
 import Component from '@glimmer/component';
 import { guidFor } from '@ember/object/internals';
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 
-export default class InputSelectComponent extends Component {
+
+export default class SelectElementComponent extends Component {
+  @tracked selectElementOption;
+  
   selectId = 'select-' + guidFor(this); 
-  selectOptions = ['optionOne', 'optionTwo', 'optionThree'];
-  selectLabelText = 'Option List';
-  selectName = 'optionList';
+  selectLabelText = 'Select Your Favorite City';
+  selectName = 'cityPreference';
+
+  @action
+  setSelection(changeEvent) {
+    let value = changeEvent.target.value;
+    this.selectElementOption = value;
+    console.log('Selected option is ' + this.selectElementOption);    
+  }
 }
 ```
 
@@ -144,6 +157,10 @@ Then, the component can be used in the view or page template:
 <InputSelect />
 ```
 
+{% hint style="danger" %}
+Important Note: Due to a [super weird bug in Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=1667494), you'll need to make sure that there is no whitespace around the `<option>` element content, or else the selected option will not be available to users with assistive technology.
+{% endhint %}
+
 #### Considering Attributes
 
 Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. 
@@ -151,44 +168,6 @@ Any form input planning should include considerations for which attributes shoul
 {% hint style="info" %}
 Remember: when a form is submitted, information marked as `readonly` **will** be sent to the server upon submit, whereas information marked `disabled` **will not**. 
 {% endhint %}
-
-### Part Three: Abstracting for Reuse
-
-To create something more flexible, allow for definition upon invocation: 
-
-#### Template 
-
-```markup
-<div class="form-select">
-  <label for={{this.selectId}}>{{@selectLabelText}}</label>
-  <select id={{this.selectId}} name={{@selectName}}>
-    {{#each @selectOptions as |selectOption|}}
-      <option value={{selectOption}}>{{selectOption}}</option>
-    {{/each}}
-  </select>
-</div>
-```
-
-#### Component
-
-```javascript
-import Component from '@glimmer/component';
-import { guidFor } from '@ember/object/internals';
-
-export default class InputSelectComponent extends Component {
-  selectId = 'select-' + guidFor(this); 
-}
-```
-
-#### Invocation
-
-```markup
-<InputSelect
-  @selectLabelText="Option List Label Text"
-  @selectName="optionList"
-  @selectOptions={{array 'optionOne' 'optionTwo' 'optionThree'}} 
-/>
-```
 
 ### References
 
