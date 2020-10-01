@@ -1,3 +1,7 @@
+---
+description: How to write an accessible native select element in Ember apps.
+---
+
 # Select Element
 
 ### Introduction
