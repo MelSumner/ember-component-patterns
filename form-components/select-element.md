@@ -166,7 +166,7 @@ Important Note: Due to a [super weird bug in Firefox](https://bugzilla.mozilla.o
 
 #### Considering Attributes
 
-Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. 
+Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. Using `...attributes` can be one way to give your component the flexibility it needs without having to pre-consider every attribute.
 
 {% hint style="info" %}
 Remember: when a form is submitted, information marked as `readonly` **will** be sent to the server upon submit, whereas information marked `disabled` **will not**. 
