@@ -16,10 +16,10 @@ It is a common misconception that the select element is not enough for web devel
 
 ### Part One: Considering Markup
 
-The select element markup is rather straight-forward- all of the options are grouped together in one list, or option groups are indicated. 
+The select element markup is rather straight-forward. All of the options are grouped together in one list or option groups are indicated. 
 
 ```markup
-<div class="form-select">
+<form>
 	<label for="select-color">Select your preferred color:</label>
 	<select name="colorPrefs" id="select-color">
 		<option value="red">Red</option>
@@ -30,7 +30,7 @@ The select element markup is rather straight-forward- all of the options are gro
 		<option value="indigo">Indigo</option>
 		<option value="violet">Violet</option>
 	</select>
-</div>
+</form>
 ```
 
 Benefits provided by the semantic html element: 
@@ -45,7 +45,7 @@ Benefits provided by the semantic html element:
 If grouping is desired, the `<optgroup>` markup can be used:
 
 ```markup
-<div class="form-select">
+<form>
 	<label for="select-activity">Select your preferred activity:</label>
 	<select name="activityPrefs" id="select-activity">
 		<optgroup label="Indoor">
@@ -59,10 +59,10 @@ If grouping is desired, the `<optgroup>` markup can be used:
 			<option value="outdoor-horseback">Horseback Riding</option>
 		</optgroup>
 	</select>
-</div>
+</form>
 ```
 
-While multiple selections can be allowed through the use of the `multiple` attribute -- most browsers will show a scrolling list box instead of a single line dropdown -- it should be noted that use of the `multiple` attribute is not generally advised, as it can be a confusing interface for users. 
+While multiple selections can be allowed through the use of the `<select multiple>` attribute — most browsers will show a scrolling list box instead of a single line dropdown. It should be noted that use of the `multiple` attribute is not generally advised as it can be a confusing interface for users. 
 
 But what about when you need something more complex? As a general rule, it is far better to simplify the UX so that a native select can be used. However, there are considerations for when a custom select component is required.
 
@@ -100,25 +100,25 @@ This will create three files and put them in the correct location:
 * app/components/select-element.js
 * tests/integration/components/select-element-test.js
 
-In **app/components/select-element.hbs**, the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
+In **app/components/select-element.hbs** the component markup can be set up and the places where dynamic functionality is needed can be indicated. 
 
 So this markup: 
 
 ```markup
-<div class="form-select">
+<form>
   <label for="favoriteCity">Select Your Favorite City</label>
   <select id="favoriteCity" name="select-favoriteCity">
     <option value="Austin">Austin</option>
     <option value="Boston">Boston</option>
     <option value="Chicago">Chicago</option>
   </select>
-</div>
+</form>
 ```
 
 Becomes this component template: 
 
 ```markup
-<div class="form-select">
+<form>
   <label for={{this.selectId}}>{{this.selectLabelText}}</label>
   {{#let (array 'Austin' 'Boston' 'Chicago') as |selectElementOptions|}}
     <select id={{this.selectId}} name={{this.selectName}} {{on "change" this.setSelection}}>
@@ -127,10 +127,14 @@ Becomes this component template:
       {{/each}}
     </select>
   {{/let}}
-</div> 
+</form>
 ```
 
-In **app/components/select-element.js**, the select `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
+{% hint style="warning" %}
+Note: The above component template code relies on the popular [ember-truth-helpers](https://github.com/jmurphyau/ember-truth-helpers) addon for its equality check for the looped `<option>`'s selected attribute.
+{% endhint %}
+
+In **app/components/select-element.js** the select `id` will need to be generated so the label element can access it. While there are a few different ways to accomplish this, the existing `guidFor` function will serve nicely: 
 
 ```javascript
 import Component from '@glimmer/component';
@@ -142,7 +146,7 @@ import { tracked } from '@glimmer/tracking';
 export default class SelectElementComponent extends Component {
   @tracked selectElementOption;
   
-  selectId = 'select-' + guidFor(this); 
+  selectId = `select-${guidFor(this)}`;
   selectLabelText = 'Select Your Favorite City';
   selectName = 'cityPreference';
 
@@ -166,7 +170,7 @@ Important Note: Due to a [super weird bug in Firefox](https://bugzilla.mozilla.o
 
 #### Considering Attributes
 
-Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. Using `...attributes` can be one way to give your component the flexibility it needs without having to pre-consider every attribute.
+Any form input planning should include considerations for which attributes should be supported. At the bare minimum, `required`, `disabled`, and `readonly` should be considered. Using `...attributes` can be one way to give your component the flexibility it needs without having to preplan every attribute.
 
 {% hint style="info" %}
 Remember: when a form is submitted, information marked as `readonly` **will** be sent to the server upon submit, whereas information marked `disabled` **will not**. 
