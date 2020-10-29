@@ -88,6 +88,10 @@ At the very least, developers should understand how a native select component is
 
 ### Part Two: Creating the Ember Component
 
+{% hint style="success" %}
+Just want something that works instead of rolling your own component? Try the [ember-select-light](https://github.com/ember-a11y/ember-select-light) addon, recently updated for the Octane edition of Ember!
+{% endhint %}
+
 The component should be generated \(via ember-cli\): 
 
 ```bash
@@ -175,6 +179,10 @@ Any form input planning should include considerations for which attributes shoul
 {% hint style="info" %}
 Remember: when a form is submitted, information marked as `readonly` **will** be sent to the server upon submit, whereas information marked `disabled` **will not**. 
 {% endhint %}
+
+### Leveraging Ember Addons
+
+The [Ember addon community](https://emberobserver.com/) is rich with ready-to-use components. For a simple and easily accessible `<select>` element, check out [ember-select-light](https://github.com/ember-a11y/ember-select-light) and assign it a `<label>`.
 
 ### References
 
