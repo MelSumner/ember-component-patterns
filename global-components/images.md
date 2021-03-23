@@ -1,6 +1,6 @@
 # Images
 
-General guidelines for images Images can be used to enhance a website's visual presentation.
+Images can be used to enhance a website's visual presentation.
 
 ## ALT attributes
 
