@@ -139,7 +139,7 @@ In the generated `radio-group.hbs` file, add this markup:
 ```markup
 <fieldset>
   <legend>{{@title}}</legend>
-  {{#each this.cityNames as |cityName| }}
+  {{#each this.cityNames as |cityName|}}
     <div class="radio-button">
       <input
         type="radio"
@@ -161,11 +161,11 @@ For the purpose of this example, the assumption is made that `cityNames` is defi
 ```javascript
 import Component from '@glimmer/component';
 
-export default class RadioButtonsComponent extends Component { 
+export default class RadioGroupComponent extends Component { 
   cityNames = [ 
     { city: 'austin' }, 
-    { city: 'boston'}, 
-    { city: 'portland'}
+    { city: 'boston' }, 
+    { city: 'portland' }
   ]; 
 }
 ```
