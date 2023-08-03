@@ -16,11 +16,12 @@ The ARIA spec details how to do tabs: https://developer.mozilla.org/en-US/docs/W
 
 # Important Considerations
 
-1. Should the inactive Tab Panel be rendered when its associated Tab is not selected and simply hidden with CSS (e.g., `display: none;`)?
-2. Or should inactive Tab Panels be conditionally rendered with an `{{#if` block?
-3. Can I bind the selected tab to a route or URL query parameter without much fuss?
-4. Can I add my own widgets in the Tab (e.g., error indicators, counters, loading indicators, a dots menu with options)?
-5. Can I render the TabList using data from an API response? Can users dynamically create, remove, edit tab titles?
+1. Is my TabList accessible? Does it use ARIA or semantic HTML so that all users can use it?
+2. Should the inactive Tab Panel be rendered when its associated Tab is not selected and simply hidden with CSS (e.g., `display: none;`)?
+3. Or should inactive Tab Panels be conditionally rendered with an `{{#if` block?
+4. Can I bind the selected tab to a route or URL query parameter without much fuss?
+5. Can I add my own widgets in the Tab (e.g., error indicators, counters, loading indicators, a dots menu with options)?
+6. Can I render the TabList using data from an API response? Can users dynamically create, remove, edit tab titles?
 
 There are tradeoffs for each one:
 - When using some third-party componens, if you render the content for inactive tabs (case number one), those components may not function correctly because of the `display: none`.
